@@ -77,7 +77,7 @@ p {
   font-size: 14px;
   font-weight: 600;
   color: #ffffff;
-  background: #6900ef;
+  background: #3B82F6;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -130,7 +130,7 @@ p {
   padding: 10px 24px;
   font-size: 14px;
   font-weight: 600;
-  color: #6900ef;
+  color: #3B82F6;
   background: #f3e8ff;
   border: none;
   border-radius: 8px;
@@ -381,7 +381,7 @@ p {
   font-size: 14px;
   font-weight: 600;
   color: #ffffff;
-  background: #6900ef;
+  background: #3B82F6;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -480,7 +480,7 @@ p {
   font-size: 14px;
   font-weight: 600;
   color: #ffffff;
-  background: #6900ef;
+  background: #3B82F6;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -490,7 +490,7 @@ p {
   padding: 10px 20px;
   font-size: 14px;
   font-weight: 600;
-  color: #6900ef;
+  color: #3B82F6;
   background: #f3e8ff;
   border: none;
   border-radius: 8px;

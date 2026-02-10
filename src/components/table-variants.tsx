@@ -717,7 +717,7 @@ export default function TableVariants() {
                             background: "transparent",
                             border: "none",
                             cursor: "pointer",
-                            color: "#6900ef",
+                            color: "#3B82F6",
                           }}
                         >
                           <Eye size={16} />
@@ -728,7 +728,7 @@ export default function TableVariants() {
                             background: "transparent",
                             border: "none",
                             cursor: "pointer",
-                            color: "#6900ef",
+                            color: "#3B82F6",
                           }}
                         >
                           <Edit size={16} />
@@ -1044,7 +1044,7 @@ export default function TableVariants() {
               }}
             >
               <thead>
-                <tr style={{ background: "#6900ef" }}>
+                <tr style={{ background: "#3B82F6" }}>
                   <th
                     style={{
                       padding: "12px",
@@ -1588,7 +1588,7 @@ export default function TableVariants() {
                       fontWeight: "600",
                       color: "#111827",
                       background: "#f3e8ff",
-                      borderBottom: "3px solid #6900ef",
+                      borderBottom: "3px solid #3B82F6",
                     }}
                   >
                     Name

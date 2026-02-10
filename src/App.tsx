@@ -87,10 +87,10 @@ export default function App() {
               padding: "10px 20px",
               fontSize: "14px",
               fontWeight: "600",
-              color: currentPage === item.id ? "white" : "#6900ef",
+              color: currentPage === item.id ? "white" : "#3B82F6",
               background:
                 currentPage === item.id
-                  ? "linear-gradient(135deg, #6900ef 0%, #8b3dff 100%)"
+                  ? "linear-gradient(135deg, #3B82F6 0%, #8b3dff 100%)"
                   : "transparent",
               border: "none",
               borderRadius: "8px",

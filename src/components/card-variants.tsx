@@ -46,12 +46,12 @@ function CardVariant1() {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 .card-minimal-border:hover {
-  border-color: #6900ef;
+  border-color: #3B82F6;
 }
 .card-icon-box {
   width: 40px;
   height: 40px;
-  background: #6900ef;
+  background: #3B82F6;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -72,7 +72,7 @@ function CardVariant1() {
 }
 .card-link {
   font-size: 12px;
-  color: #6900ef;
+  color: #3B82F6;
   font-weight: 600;
 }
 </style>
@@ -101,7 +101,7 @@ function CardVariant1() {
           justifyContent: "space-between",
         }}
         onMouseEnter={(e) => {
-          e.currentTarget.style.borderColor = "#6900ef";
+          e.currentTarget.style.borderColor = "#3B82F6";
         }}
         onMouseLeave={(e) => {
           e.currentTarget.style.borderColor = "#e5e7eb";
@@ -112,7 +112,7 @@ function CardVariant1() {
             style={{
               width: "40px",
               height: "40px",
-              background: "#6900ef",
+              background: "#3B82F6",
               borderRadius: "8px",
               display: "flex",
               alignItems: "center",
@@ -143,7 +143,7 @@ function CardVariant1() {
             Track performance and insights
           </p>
         </div>
-        <div style={{ fontSize: "12px", color: "#6900ef", fontWeight: "600" }}>
+        <div style={{ fontSize: "12px", color: "#3B82F6", fontWeight: "600" }}>
           Learn more →
         </div>
       </div>
@@ -265,7 +265,7 @@ function CardVariant2() {
               marginBottom: "16px",
             }}
           >
-            <Table size={24} color="#6900ef" />
+            <Table size={24} color="#3B82F6" />
           </div>
           <h3
             style={{
@@ -320,7 +320,7 @@ function CardVariant3() {
           code={`<style>
 .card-left-border {
   background: #ffffff;
-  border-left: 4px solid #6900ef;
+  border-left: 4px solid #3B82F6;
   border: 1px solid #e5e7eb;
   border-radius: 8px;
   padding: 24px;
@@ -351,7 +351,7 @@ function CardVariant3() {
   display: inline-block;
   padding: 4px 12px;
   background: #f3e8ff;
-  color: #6900ef;
+  color: #3B82F6;
   border-radius: 16px;
   font-size: 12px;
   font-weight: 600;
@@ -359,7 +359,7 @@ function CardVariant3() {
 .card-left-border .arrow {
   display: flex;
   justify-content: flex-end;
-  color: #6900ef;
+  color: #3B82F6;
 }
 </style>
 
@@ -376,7 +376,7 @@ function CardVariant3() {
       <div
         style={{
           background: "white",
-          borderLeft: "4px solid #6900ef",
+          borderLeft: "4px solid #3B82F6",
           border: "1px solid #e5e7eb",
           borderRadius: "8px",
           padding: "24px",
@@ -420,7 +420,7 @@ function CardVariant3() {
               display: "inline-block",
               padding: "4px 12px",
               background: "#f3e8ff",
-              color: "#6900ef",
+              color: "#3B82F6",
               borderRadius: "16px",
               fontSize: "12px",
               fontWeight: "600",
@@ -430,7 +430,7 @@ function CardVariant3() {
           </div>
         </div>
         <div style={{ display: "flex", justifyContent: "flex-end" }}>
-          <ArrowRight size={20} color="#6900ef" />
+          <ArrowRight size={20} color="#3B82F6" />
         </div>
       </div>
     </div>
@@ -463,7 +463,7 @@ function CardVariant4() {
           variantId="card-gradient"
           code={`<style>
 .card-gradient {
-  background: linear-gradient(135deg, #6900ef 0%, #8b3dff 100%);
+  background: linear-gradient(135deg, #3B82F6 0%, #8b3dff 100%);
   border: none;
   border-radius: 16px;
   padding: 24px;
@@ -526,7 +526,7 @@ function CardVariant4() {
       </div>
       <div
         style={{
-          background: "linear-gradient(135deg, #6900ef 0%, #8b3dff 100%)",
+          background: "linear-gradient(135deg, #3B82F6 0%, #8b3dff 100%)",
           border: "none",
           borderRadius: "16px",
           padding: "24px",
@@ -638,7 +638,7 @@ function CardVariant5() {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 .card-outlined:hover {
-  border-color: #6900ef;
+  border-color: #3B82F6;
   background: #fafbff;
 }
 .card-outlined .header {
@@ -650,7 +650,7 @@ function CardVariant5() {
 .card-outlined .icon-circle {
   width: 56px;
   height: 56px;
-  background: #6900ef;
+  background: #3B82F6;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -697,7 +697,7 @@ function CardVariant5() {
           boxShadow: "0 1px 3px rgba(0,0,0,0.05)",
         }}
         onMouseEnter={(e) => {
-          e.currentTarget.style.borderColor = "#6900ef";
+          e.currentTarget.style.borderColor = "#3B82F6";
           e.currentTarget.style.background = "#fafbff";
         }}
         onMouseLeave={(e) => {
@@ -718,7 +718,7 @@ function CardVariant5() {
               style={{
                 width: "56px",
                 height: "56px",
-                background: "#6900ef",
+                background: "#3B82F6",
                 borderRadius: "50%",
                 display: "flex",
                 alignItems: "center",
@@ -782,7 +782,7 @@ function CardVariant6() {
 .card-top-stripe {
   background: #ffffff;
   border: 1px solid #e5e7eb;
-  border-top: 6px solid #6900ef;
+  border-top: 6px solid #3B82F6;
   border-radius: 12px;
   padding: 24px;
   cursor: pointer;
@@ -812,7 +812,7 @@ function CardVariant6() {
   display: flex;
   align-items: center;
   gap: 8px;
-  color: #6900ef;
+  color: #3B82F6;
   font-size: 14px;
   font-weight: 600;
 }
@@ -834,7 +834,7 @@ function CardVariant6() {
         style={{
           background: "white",
           border: "1px solid #e5e7eb",
-          borderTop: "6px solid #6900ef",
+          borderTop: "6px solid #3B82F6",
           borderRadius: "12px",
           padding: "24px",
           cursor: "pointer",
@@ -878,7 +878,7 @@ function CardVariant6() {
             display: "flex",
             alignItems: "center",
             gap: "8px",
-            color: "#6900ef",
+            color: "#3B82F6",
             fontSize: "14px",
             fontWeight: "600",
           }}
@@ -939,7 +939,7 @@ function CardVariant7() {
 .card-glass .icon-box {
   width: 52px;
   height: 52px;
-  background: linear-gradient(135deg, #6900ef, #8b3dff);
+  background: linear-gradient(135deg, #3B82F6, #8b3dff);
   border-radius: 16px;
   display: flex;
   align-items: center;
@@ -999,7 +999,7 @@ function CardVariant7() {
             style={{
               width: "52px",
               height: "52px",
-              background: "linear-gradient(135deg, #6900ef, #8b3dff)",
+              background: "linear-gradient(135deg, #3B82F6, #8b3dff)",
               borderRadius: "16px",
               display: "flex",
               alignItems: "center",
@@ -1074,7 +1074,7 @@ function CardVariant8() {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 .card-compact:hover {
-  border-color: #6900ef;
+  border-color: #3B82F6;
   background: linear-gradient(135deg, #fafbff 0%, #ffffff 100%);
 }
 .card-compact .header {
@@ -1110,7 +1110,7 @@ function CardVariant8() {
   align-items: center;
   justify-content: center;
   padding: 10px;
-  background: #6900ef;
+  background: #3B82F6;
   border-radius: 8px;
   color: #ffffff;
   font-size: 14px;
@@ -1144,7 +1144,7 @@ function CardVariant8() {
           justifyContent: "space-between",
         }}
         onMouseEnter={(e) => {
-          e.currentTarget.style.borderColor = "#6900ef";
+          e.currentTarget.style.borderColor = "#3B82F6";
           e.currentTarget.style.background =
             "linear-gradient(135deg, #fafbff 0%, white 100%)";
         }}
@@ -1166,7 +1166,7 @@ function CardVariant8() {
               flexShrink: 0,
             }}
           >
-            <Table size={22} color="#6900ef" />
+            <Table size={22} color="#3B82F6" />
           </div>
           <div>
             <h3
@@ -1197,7 +1197,7 @@ function CardVariant8() {
             alignItems: "center",
             justifyContent: "center",
             padding: "10px",
-            background: "#6900ef",
+            background: "#3B82F6",
             borderRadius: "8px",
             color: "white",
             fontSize: "14px",
@@ -1250,13 +1250,13 @@ function CardVariant9() {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 .card-dark:hover {
-  border-color: #6900ef;
+  border-color: #3B82F6;
   box-shadow: 0 0 20px rgba(105, 0, 239, 0.3);
 }
 .card-dark .icon-box {
   width: 40px;
   height: 40px;
-  background: #6900ef;
+  background: #3B82F6;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -1312,7 +1312,7 @@ function CardVariant9() {
           justifyContent: "space-between",
         }}
         onMouseEnter={(e) => {
-          e.currentTarget.style.borderColor = "#6900ef";
+          e.currentTarget.style.borderColor = "#3B82F6";
           e.currentTarget.style.boxShadow = "0 0 20px rgba(105, 0, 239, 0.3)";
         }}
         onMouseLeave={(e) => {
@@ -1325,7 +1325,7 @@ function CardVariant9() {
             style={{
               width: "40px",
               height: "40px",
-              background: "#6900ef",
+              background: "#3B82F6",
               borderRadius: "8px",
               display: "flex",
               alignItems: "center",
@@ -1367,7 +1367,7 @@ function CardVariant9() {
             justifyContent: "center",
           }}
         >
-          <ArrowRight size={16} color="#6900ef" />
+          <ArrowRight size={16} color="#3B82F6" />
         </div>
       </div>
     </div>
@@ -1422,7 +1422,7 @@ function CardVariant10() {
   position: absolute;
   top: 12px;
   right: 12px;
-  background: #6900ef;
+  background: #3B82F6;
   color: #ffffff;
   padding: 4px 10px;
   border-radius: 12px;
@@ -1486,7 +1486,7 @@ function CardVariant10() {
             position: "absolute",
             top: "12px",
             right: "12px",
-            background: "#6900ef",
+            background: "#3B82F6",
             color: "white",
             padding: "4px 10px",
             borderRadius: "12px",
@@ -1499,7 +1499,7 @@ function CardVariant10() {
         <div>
           <Sparkles
             size={32}
-            color="#6900ef"
+            color="#3B82F6"
             strokeWidth={2}
             style={{ marginBottom: "16px" }}
           />
@@ -1600,7 +1600,7 @@ function CardVariant11() {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  color: #6900ef;
+  color: #3B82F6;
   font-size: 14px;
   font-weight: 600;
 }
@@ -1651,7 +1651,7 @@ function CardVariant11() {
             opacity: 0.05,
           }}
         >
-          <Table size={120} color="#6900ef" strokeWidth={1} />
+          <Table size={120} color="#3B82F6" strokeWidth={1} />
         </div>
         <div style={{ position: "relative", zIndex: 1 }}>
           <h3
@@ -1679,7 +1679,7 @@ function CardVariant11() {
               display: "inline-flex",
               alignItems: "center",
               gap: "6px",
-              color: "#6900ef",
+              color: "#3B82F6",
               fontSize: "14px",
               fontWeight: "600",
             }}
@@ -1710,7 +1710,7 @@ function CardVariant12() {
         overflow: "hidden",
       }}
       onMouseEnter={(e) => {
-        e.currentTarget.style.borderColor = "#6900ef";
+        e.currentTarget.style.borderColor = "#3B82F6";
       }}
       onMouseLeave={(e) => {
         e.currentTarget.style.borderColor = "#e5e7eb";
@@ -1718,7 +1718,7 @@ function CardVariant12() {
     >
       <div
         style={{
-          background: "linear-gradient(135deg, #6900ef 0%, #8b3dff 100%)",
+          background: "linear-gradient(135deg, #3B82F6 0%, #8b3dff 100%)",
           padding: "20px 24px",
           display: "flex",
           alignItems: "center",
@@ -1771,9 +1771,9 @@ function CardVariant12() {
         <div
           style={{
             padding: "8px 16px",
-            border: "2px solid #6900ef",
+            border: "2px solid #3B82F6",
             borderRadius: "8px",
-            color: "#6900ef",
+            color: "#3B82F6",
             fontSize: "14px",
             fontWeight: "600",
             textAlign: "center",
@@ -1829,7 +1829,7 @@ function CardVariant13() {
           style={{
             width: "48px",
             height: "48px",
-            background: "#6900ef",
+            background: "#3B82F6",
             borderRadius: "12px",
             display: "flex",
             alignItems: "center",
@@ -1843,7 +1843,7 @@ function CardVariant13() {
           style={{
             fontSize: "20px",
             fontWeight: "700",
-            color: "#6900ef",
+            color: "#3B82F6",
             margin: "0 0 8px 0",
           }}
         >
@@ -2210,119 +2210,119 @@ export default function CardVariants() {
         }}
       >
         <div>
-          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
+          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#3B82F6' }}>
             VARIANT 1 - Minimal Border
           </div> */}
           <CardVariant1 />
         </div>
 
         <div>
-          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
+          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#3B82F6' }}>
             VARIANT 2 - Soft Shadow
           </div> */}
           <CardVariant2 />
         </div>
 
         <div>
-          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
+          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#3B82F6' }}>
             VARIANT 3 - Left Border Accent
           </div> */}
           <CardVariant3 />
         </div>
 
         <div>
-          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
+          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#3B82F6' }}>
             VARIANT 4 - Gradient Background
           </div> */}
           <CardVariant4 />
         </div>
 
         <div>
-          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
+          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#3B82F6' }}>
             VARIANT 5 - Outlined Hover
           </div> */}
           <CardVariant5 />
         </div>
 
         <div>
-          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
+          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#3B82F6' }}>
             VARIANT 6 - Top Stripe
           </div> */}
           <CardVariant6 />
         </div>
 
         <div>
-          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
+          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#3B82F6' }}>
             VARIANT 7 - Glass Morphism
           </div> */}
           <CardVariant7 />
         </div>
 
         <div>
-          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
+          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#3B82F6' }}>
             VARIANT 8 - Compact Horizontal
           </div> */}
           <CardVariant8 />
         </div>
 
         <div>
-          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
+          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#3B82F6' }}>
             VARIANT 9 - Minimal Dark
           </div> */}
           <CardVariant9 />
         </div>
 
         <div>
-          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
+          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#3B82F6' }}>
             VARIANT 10 - Badge Style
           </div> */}
           <CardVariant10 />
         </div>
 
         <div>
-          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
+          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#3B82F6' }}>
             VARIANT 11 - Icon Background
           </div> */}
           <CardVariant11 />
         </div>
 
         <div>
-          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
+          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#3B82F6' }}>
             VARIANT 12 - Split Design
           </div> */}
           <CardVariant12 />
         </div>
 
         <div>
-          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
+          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#3B82F6' }}>
             VARIANT 13 - Light Purple Gradient
           </div> */}
           <CardVariant13 />
         </div>
 
         <div>
-          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
+          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#3B82F6' }}>
             VARIANT 14 - Soft Blue Gradient
           </div> */}
           <CardVariant14 />
         </div>
 
         <div>
-          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
+          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#3B82F6' }}>
             VARIANT 15 - Pastel Gradient
           </div> */}
           <CardVariant15 />
         </div>
 
         <div>
-          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
+          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#3B82F6' }}>
             VARIANT 16 - Mint Gradient
           </div> */}
           <CardVariant16 />
         </div>
 
         <div>
-          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
+          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#3B82F6' }}>
             VARIANT 17 - Peach Gradient
           </div> */}
           <CardVariant17 />

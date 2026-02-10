@@ -1,11 +1,22 @@
-import { Info, AlertTriangle, Check, X, AlertCircle, Bell, Zap, Heart, Star, Shield } from 'lucide-react';
-import { CopyButton } from './copy-button';
+import {
+  Info,
+  AlertTriangle,
+  Check,
+  X,
+  AlertCircle,
+  Bell,
+  Zap,
+  Heart,
+  Star,
+  Shield,
+} from "lucide-react";
+import { CopyButton } from "./copy-button";
 
 export default function AlertVariants() {
   const variants = [
     {
-      id: 'info-basic',
-      title: 'Variant 1: Info - Basic',
+      id: "info-basic",
+      title: "Variant 1: Info - Basic",
       code: `<!-- Info Alert - Basic -->
 <div class="alert-info-basic">
   <svg class="alert-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2">
@@ -42,27 +53,40 @@ export default function AlertVariants() {
 }
 </style>`,
       component: (
-        <div style={{ 
-          padding: '16px',
-          background: '#dbeafe',
-          border: '1px solid #3b82f6',
-          borderRadius: '8px',
-          display: 'flex',
-          alignItems: 'start',
-          gap: '12px'
-        }}>
-          <Info size={20} color="#3b82f6" style={{ flexShrink: 0, marginTop: '2px' }} />
+        <div
+          style={{
+            padding: "16px",
+            background: "#dbeafe",
+            border: "1px solid #3b82f6",
+            borderRadius: "8px",
+            display: "flex",
+            alignItems: "start",
+            gap: "12px",
+          }}
+        >
+          <Info
+            size={20}
+            color="#3b82f6"
+            style={{ flexShrink: 0, marginTop: "2px" }}
+          />
           <div style={{ flex: 1 }}>
-            <p style={{ fontSize: '14px', color: '#1e40af', margin: 0, fontWeight: '500' }}>
+            <p
+              style={{
+                fontSize: "14px",
+                color: "#1e40af",
+                margin: 0,
+                fontWeight: "500",
+              }}
+            >
               This is an informational alert message.
             </p>
           </div>
         </div>
-      )
+      ),
     },
     {
-      id: 'success-title',
-      title: 'Variant 2: Success - With Title',
+      id: "success-title",
+      title: "Variant 2: Success - With Title",
       code: `<!-- Success Alert - With Title -->
 <div class="alert-success-title">
   <svg class="alert-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2">
@@ -109,30 +133,43 @@ export default function AlertVariants() {
 }
 </style>`,
       component: (
-        <div style={{ 
-          padding: '16px',
-          background: '#d1fae5',
-          border: '1px solid #10b981',
-          borderRadius: '8px',
-          display: 'flex',
-          alignItems: 'start',
-          gap: '12px'
-        }}>
-          <Check size={20} color="#10b981" style={{ flexShrink: 0, marginTop: '2px' }} />
+        <div
+          style={{
+            padding: "16px",
+            background: "#d1fae5",
+            border: "1px solid #10b981",
+            borderRadius: "8px",
+            display: "flex",
+            alignItems: "start",
+            gap: "12px",
+          }}
+        >
+          <Check
+            size={20}
+            color="#10b981"
+            style={{ flexShrink: 0, marginTop: "2px" }}
+          />
           <div style={{ flex: 1 }}>
-            <h4 style={{ fontSize: '14px', color: '#047857', margin: '0 0 4px 0', fontWeight: '600' }}>
+            <h4
+              style={{
+                fontSize: "14px",
+                color: "#047857",
+                margin: "0 0 4px 0",
+                fontWeight: "600",
+              }}
+            >
               Success!
             </h4>
-            <p style={{ fontSize: '14px', color: '#059669', margin: 0 }}>
+            <p style={{ fontSize: "14px", color: "#059669", margin: 0 }}>
               Your changes have been saved successfully.
             </p>
           </div>
         </div>
-      )
+      ),
     },
     {
-      id: 'warning-left-border',
-      title: 'Variant 3: Warning - Left Border',
+      id: "warning-left-border",
+      title: "Variant 3: Warning - Left Border",
       code: `<!-- Warning Alert - Left Border -->
 <div class="alert-warning-border">
   <svg class="alert-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2">
@@ -169,27 +206,40 @@ export default function AlertVariants() {
 }
 </style>`,
       component: (
-        <div style={{ 
-          padding: '16px',
-          background: '#fef3c7',
-          borderLeft: '4px solid #f59e0b',
-          borderRadius: '4px',
-          display: 'flex',
-          alignItems: 'start',
-          gap: '12px'
-        }}>
-          <AlertTriangle size={20} color="#f59e0b" style={{ flexShrink: 0, marginTop: '2px' }} />
+        <div
+          style={{
+            padding: "16px",
+            background: "#fef3c7",
+            borderLeft: "4px solid #f59e0b",
+            borderRadius: "4px",
+            display: "flex",
+            alignItems: "start",
+            gap: "12px",
+          }}
+        >
+          <AlertTriangle
+            size={20}
+            color="#f59e0b"
+            style={{ flexShrink: 0, marginTop: "2px" }}
+          />
           <div style={{ flex: 1 }}>
-            <p style={{ fontSize: '14px', color: '#92400e', margin: 0, fontWeight: '500' }}>
+            <p
+              style={{
+                fontSize: "14px",
+                color: "#92400e",
+                margin: 0,
+                fontWeight: "500",
+              }}
+            >
               Please review your information before proceeding.
             </p>
           </div>
         </div>
-      )
+      ),
     },
     {
-      id: 'error-dismissible',
-      title: 'Variant 4: Error - Dismissible',
+      id: "error-dismissible",
+      title: "Variant 4: Error - Dismissible",
       code: `<!-- Error Alert - Dismissible -->
 <div class="alert-error-dismissible">
   <svg class="alert-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2">
@@ -245,36 +295,51 @@ export default function AlertVariants() {
 }
 </style>`,
       component: (
-        <div style={{ 
-          padding: '16px',
-          background: '#fee2e2',
-          border: '1px solid #ef4444',
-          borderRadius: '8px',
-          display: 'flex',
-          alignItems: 'start',
-          gap: '12px'
-        }}>
-          <AlertCircle size={20} color="#ef4444" style={{ flexShrink: 0, marginTop: '2px' }} />
+        <div
+          style={{
+            padding: "16px",
+            background: "#fee2e2",
+            border: "1px solid #ef4444",
+            borderRadius: "8px",
+            display: "flex",
+            alignItems: "start",
+            gap: "12px",
+          }}
+        >
+          <AlertCircle
+            size={20}
+            color="#ef4444"
+            style={{ flexShrink: 0, marginTop: "2px" }}
+          />
           <div style={{ flex: 1 }}>
-            <p style={{ fontSize: '14px', color: '#991b1b', margin: 0, fontWeight: '500' }}>
+            <p
+              style={{
+                fontSize: "14px",
+                color: "#991b1b",
+                margin: 0,
+                fontWeight: "500",
+              }}
+            >
               An error occurred while processing your request.
             </p>
           </div>
-          <button style={{ 
-            background: 'transparent', 
-            border: 'none', 
-            cursor: 'pointer', 
-            padding: 0,
-            flexShrink: 0 
-          }}>
+          <button
+            style={{
+              background: "transparent",
+              border: "none",
+              cursor: "pointer",
+              padding: 0,
+              flexShrink: 0,
+            }}
+          >
             <X size={20} color="#991b1b" />
           </button>
         </div>
-      )
+      ),
     },
     {
-      id: 'info-solid',
-      title: 'Variant 5: Info - Solid',
+      id: "info-solid",
+      title: "Variant 5: Info - Solid",
       code: `<!-- Info Alert - Solid -->
 <div class="alert-info-solid">
   <svg class="alert-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2">
@@ -310,26 +375,39 @@ export default function AlertVariants() {
 }
 </style>`,
       component: (
-        <div style={{ 
-          padding: '16px',
-          background: '#3b82f6',
-          borderRadius: '8px',
-          display: 'flex',
-          alignItems: 'start',
-          gap: '12px'
-        }}>
-          <Info size={20} color="#ffffff" style={{ flexShrink: 0, marginTop: '2px' }} />
+        <div
+          style={{
+            padding: "16px",
+            background: "#3b82f6",
+            borderRadius: "8px",
+            display: "flex",
+            alignItems: "start",
+            gap: "12px",
+          }}
+        >
+          <Info
+            size={20}
+            color="#ffffff"
+            style={{ flexShrink: 0, marginTop: "2px" }}
+          />
           <div style={{ flex: 1 }}>
-            <p style={{ fontSize: '14px', color: '#ffffff', margin: 0, fontWeight: '500' }}>
+            <p
+              style={{
+                fontSize: "14px",
+                color: "#ffffff",
+                margin: 0,
+                fontWeight: "500",
+              }}
+            >
               Check out the latest updates and features.
             </p>
           </div>
         </div>
-      )
+      ),
     },
     {
-      id: 'success-minimal',
-      title: 'Variant 6: Success - Minimal',
+      id: "success-minimal",
+      title: "Variant 6: Success - Minimal",
       code: `<!-- Success Alert - Minimal -->
 <div class="alert-success-minimal">
   <svg class="alert-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2">
@@ -394,43 +472,64 @@ export default function AlertVariants() {
 }
 </style>`,
       component: (
-        <div style={{ 
-          padding: '16px',
-          background: '#ffffff',
-          border: '1px solid #e5e7eb',
-          borderRadius: '8px',
-          display: 'flex',
-          alignItems: 'start',
-          gap: '12px'
-        }}>
-          <Check size={20} color="#10b981" style={{ flexShrink: 0, marginTop: '2px' }} />
+        <div
+          style={{
+            padding: "16px",
+            background: "#ffffff",
+            border: "1px solid #e5e7eb",
+            borderRadius: "8px",
+            display: "flex",
+            alignItems: "start",
+            gap: "12px",
+          }}
+        >
+          <Check
+            size={20}
+            color="#10b981"
+            style={{ flexShrink: 0, marginTop: "2px" }}
+          />
           <div style={{ flex: 1 }}>
-            <h4 style={{ fontSize: '14px', color: '#111827', margin: '0 0 4px 0', fontWeight: '600' }}>
+            <h4
+              style={{
+                fontSize: "14px",
+                color: "#111827",
+                margin: "0 0 4px 0",
+                fontWeight: "600",
+              }}
+            >
               Payment Successful
             </h4>
-            <p style={{ fontSize: '14px', color: '#6B7280', margin: '0 0 12px 0' }}>
+            <p
+              style={{
+                fontSize: "14px",
+                color: "#6B7280",
+                margin: "0 0 12px 0",
+              }}
+            >
               Your payment has been processed. Reference: #12345
             </p>
-            <button style={{
-              padding: '6px 12px',
-              fontSize: '13px',
-              fontWeight: '600',
-              color: '#10b981',
-              background: 'transparent',
-              border: '1px solid #10b981',
-              borderRadius: '6px',
-              cursor: 'pointer',
-              transition: 'all 0.3s'
-            }}>
+            <button
+              style={{
+                padding: "6px 12px",
+                fontSize: "13px",
+                fontWeight: "600",
+                color: "#10b981",
+                background: "transparent",
+                border: "1px solid #10b981",
+                borderRadius: "6px",
+                cursor: "pointer",
+                transition: "all 0.3s",
+              }}
+            >
               View Receipt
             </button>
           </div>
         </div>
-      )
+      ),
     },
     {
-      id: 'warning-top-border',
-      title: 'Variant 7: Warning - Top Border',
+      id: "warning-top-border",
+      title: "Variant 7: Warning - Top Border",
       code: `<!-- Warning Alert - Top Border -->
 <div class="alert-warning-top">
   <svg class="alert-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2">
@@ -479,30 +578,43 @@ export default function AlertVariants() {
 }
 </style>`,
       component: (
-        <div style={{ 
-          padding: '16px',
-          background: '#fffbeb',
-          borderTop: '3px solid #f59e0b',
-          borderRadius: '4px',
-          display: 'flex',
-          alignItems: 'start',
-          gap: '12px'
-        }}>
-          <AlertTriangle size={20} color="#f59e0b" style={{ flexShrink: 0, marginTop: '2px' }} />
+        <div
+          style={{
+            padding: "16px",
+            background: "#fffbeb",
+            borderTop: "3px solid #f59e0b",
+            borderRadius: "4px",
+            display: "flex",
+            alignItems: "start",
+            gap: "12px",
+          }}
+        >
+          <AlertTriangle
+            size={20}
+            color="#f59e0b"
+            style={{ flexShrink: 0, marginTop: "2px" }}
+          />
           <div style={{ flex: 1 }}>
-            <h4 style={{ fontSize: '14px', color: '#78350f', margin: '0 0 4px 0', fontWeight: '600' }}>
+            <h4
+              style={{
+                fontSize: "14px",
+                color: "#78350f",
+                margin: "0 0 4px 0",
+                fontWeight: "600",
+              }}
+            >
               Storage Almost Full
             </h4>
-            <p style={{ fontSize: '14px', color: '#92400e', margin: 0 }}>
+            <p style={{ fontSize: "14px", color: "#92400e", margin: 0 }}>
               You're using 95% of your storage. Consider upgrading your plan.
             </p>
           </div>
         </div>
-      )
+      ),
     },
     {
-      id: 'error-outlined',
-      title: 'Variant 8: Error - Outlined',
+      id: "error-outlined",
+      title: "Variant 8: Error - Outlined",
       code: `<!-- Error Alert - Outlined -->
 <div class="alert-error-outlined">
   <svg class="alert-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2">
@@ -551,33 +663,46 @@ export default function AlertVariants() {
 }
 </style>`,
       component: (
-        <div style={{ 
-          padding: '16px',
-          background: '#ffffff',
-          border: '2px solid #ef4444',
-          borderRadius: '8px',
-          display: 'flex',
-          alignItems: 'start',
-          gap: '12px'
-        }}>
-          <AlertCircle size={20} color="#ef4444" style={{ flexShrink: 0, marginTop: '2px' }} />
+        <div
+          style={{
+            padding: "16px",
+            background: "#ffffff",
+            border: "2px solid #ef4444",
+            borderRadius: "8px",
+            display: "flex",
+            alignItems: "start",
+            gap: "12px",
+          }}
+        >
+          <AlertCircle
+            size={20}
+            color="#ef4444"
+            style={{ flexShrink: 0, marginTop: "2px" }}
+          />
           <div style={{ flex: 1 }}>
-            <h4 style={{ fontSize: '14px', color: '#991b1b', margin: '0 0 4px 0', fontWeight: '600' }}>
+            <h4
+              style={{
+                fontSize: "14px",
+                color: "#991b1b",
+                margin: "0 0 4px 0",
+                fontWeight: "600",
+              }}
+            >
               Connection Failed
             </h4>
-            <p style={{ fontSize: '14px', color: '#dc2626', margin: 0 }}>
+            <p style={{ fontSize: "14px", color: "#dc2626", margin: 0 }}>
               Unable to connect to the server. Please try again.
             </p>
           </div>
         </div>
-      )
+      ),
     },
     {
-      id: 'purple-info',
-      title: 'Variant 9: Purple Info',
+      id: "purple-info",
+      title: "Variant 9: Purple Info",
       code: `<!-- Purple Info Alert -->
 <div class="alert-purple-info">
-  <svg class="alert-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6900ef" stroke-width="2">
+  <svg class="alert-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2">
     <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
     <polyline points="22 4 12 14.01 9 11.01"></polyline>
   </svg>
@@ -591,7 +716,7 @@ export default function AlertVariants() {
 .alert-purple-info {
   padding: 16px;
   background: #f3e8ff;
-  border: 1px solid #6900ef;
+  border: 1px solid #3B82F6;
   border-radius: 8px;
   display: flex;
   align-items: flex-start;
@@ -617,35 +742,48 @@ export default function AlertVariants() {
 
 .alert-purple-info .alert-message {
   font-size: 14px;
-  color: #6900ef;
+  color: #3B82F6;
   margin: 0;
 }
 </style>`,
       component: (
-        <div style={{ 
-          padding: '16px',
-          background: '#f3e8ff',
-          border: '1px solid #6900ef',
-          borderRadius: '8px',
-          display: 'flex',
-          alignItems: 'start',
-          gap: '12px'
-        }}>
-          <Bell size={20} color="#6900ef" style={{ flexShrink: 0, marginTop: '2px' }} />
+        <div
+          style={{
+            padding: "16px",
+            background: "#f3e8ff",
+            border: "1px solid #3B82F6",
+            borderRadius: "8px",
+            display: "flex",
+            alignItems: "start",
+            gap: "12px",
+          }}
+        >
+          <Bell
+            size={20}
+            color="#3B82F6"
+            style={{ flexShrink: 0, marginTop: "2px" }}
+          />
           <div style={{ flex: 1 }}>
-            <h4 style={{ fontSize: '14px', color: '#5500cc', margin: '0 0 4px 0', fontWeight: '600' }}>
+            <h4
+              style={{
+                fontSize: "14px",
+                color: "#5500cc",
+                margin: "0 0 4px 0",
+                fontWeight: "600",
+              }}
+            >
               New Feature Available
             </h4>
-            <p style={{ fontSize: '14px', color: '#6900ef', margin: 0 }}>
+            <p style={{ fontSize: "14px", color: "#3B82F6", margin: 0 }}>
               Try our new dashboard with enhanced analytics.
             </p>
           </div>
         </div>
-      )
+      ),
     },
     {
-      id: 'gradient-bg',
-      title: 'Variant 10: Gradient Background',
+      id: "gradient-bg",
+      title: "Variant 10: Gradient Background",
       code: `<!-- Gradient Background Alert -->
 <div class="alert-gradient">
   <svg class="alert-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2">
@@ -660,7 +798,7 @@ export default function AlertVariants() {
 <style>
 .alert-gradient {
   padding: 16px;
-  background: linear-gradient(135deg, #6900ef 0%, #8b3dff 100%);
+  background: linear-gradient(135deg, #3B82F6 0%, #8b3dff 100%);
   border-radius: 12px;
   display: flex;
   align-items: flex-start;
@@ -692,30 +830,43 @@ export default function AlertVariants() {
 }
 </style>`,
       component: (
-        <div style={{ 
-          padding: '16px',
-          background: 'linear-gradient(135deg, #6900ef 0%, #8b3dff 100%)',
-          borderRadius: '12px',
-          display: 'flex',
-          alignItems: 'start',
-          gap: '12px',
-          boxShadow: '0 4px 12px rgba(105, 0, 239, 0.3)'
-        }}>
-          <Zap size={20} color="#ffffff" style={{ flexShrink: 0, marginTop: '2px' }} />
+        <div
+          style={{
+            padding: "16px",
+            background: "linear-gradient(135deg, #3B82F6 0%, #8b3dff 100%)",
+            borderRadius: "12px",
+            display: "flex",
+            alignItems: "start",
+            gap: "12px",
+            boxShadow: "0 4px 12px rgba(105, 0, 239, 0.3)",
+          }}
+        >
+          <Zap
+            size={20}
+            color="#ffffff"
+            style={{ flexShrink: 0, marginTop: "2px" }}
+          />
           <div style={{ flex: 1 }}>
-            <h4 style={{ fontSize: '14px', color: '#ffffff', margin: '0 0 4px 0', fontWeight: '600' }}>
+            <h4
+              style={{
+                fontSize: "14px",
+                color: "#ffffff",
+                margin: "0 0 4px 0",
+                fontWeight: "600",
+              }}
+            >
               Premium Feature
             </h4>
-            <p style={{ fontSize: '14px', color: '#f3e8ff', margin: 0 }}>
+            <p style={{ fontSize: "14px", color: "#f3e8ff", margin: 0 }}>
               Upgrade to unlock advanced analytics and reporting.
             </p>
           </div>
         </div>
-      )
+      ),
     },
     {
-      id: 'soft-elevated',
-      title: 'Variant 11: Soft Elevated',
+      id: "soft-elevated",
+      title: "Variant 11: Soft Elevated",
       code: `<!-- Soft Elevated Alert -->
 <div class="alert-soft-elevated">
   <svg class="alert-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2">
@@ -750,27 +901,40 @@ export default function AlertVariants() {
 }
 </style>`,
       component: (
-        <div style={{ 
-          padding: '16px',
-          background: '#ffffff',
-          borderRadius: '12px',
-          display: 'flex',
-          alignItems: 'start',
-          gap: '12px',
-          boxShadow: '0 4px 16px rgba(0, 0, 0, 0.12)'
-        }}>
-          <Heart size={20} color="#10b981" style={{ flexShrink: 0, marginTop: '2px' }} />
+        <div
+          style={{
+            padding: "16px",
+            background: "#ffffff",
+            borderRadius: "12px",
+            display: "flex",
+            alignItems: "start",
+            gap: "12px",
+            boxShadow: "0 4px 16px rgba(0, 0, 0, 0.12)",
+          }}
+        >
+          <Heart
+            size={20}
+            color="#10b981"
+            style={{ flexShrink: 0, marginTop: "2px" }}
+          />
           <div style={{ flex: 1 }}>
-            <p style={{ fontSize: '14px', color: '#111827', margin: 0, fontWeight: '500' }}>
+            <p
+              style={{
+                fontSize: "14px",
+                color: "#111827",
+                margin: 0,
+                fontWeight: "500",
+              }}
+            >
               Your profile has been updated successfully!
             </p>
           </div>
         </div>
-      )
+      ),
     },
     {
-      id: 'compact',
-      title: 'Variant 12: Compact',
+      id: "compact",
+      title: "Variant 12: Compact",
       code: `<!-- Compact Alert -->
 <div class="alert-compact">
   <svg class="alert-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2">
@@ -803,26 +967,35 @@ export default function AlertVariants() {
 }
 </style>`,
       component: (
-        <div style={{ 
-          padding: '12px 16px',
-          background: '#dbeafe',
-          borderRadius: '6px',
-          display: 'flex',
-          alignItems: 'center',
-          gap: '10px'
-        }}>
+        <div
+          style={{
+            padding: "12px 16px",
+            background: "#dbeafe",
+            borderRadius: "6px",
+            display: "flex",
+            alignItems: "center",
+            gap: "10px",
+          }}
+        >
           <Star size={16} color="#3b82f6" style={{ flexShrink: 0 }} />
           <div style={{ flex: 1 }}>
-            <p style={{ fontSize: '13px', color: '#1e40af', margin: 0, fontWeight: '500' }}>
+            <p
+              style={{
+                fontSize: "13px",
+                color: "#1e40af",
+                margin: 0,
+                fontWeight: "500",
+              }}
+            >
               You have 3 new notifications
             </p>
           </div>
         </div>
-      )
+      ),
     },
     {
-      id: 'icon-badge',
-      title: 'Variant 13: Icon Badge Style',
+      id: "icon-badge",
+      title: "Variant 13: Icon Badge Style",
       code: `<!-- Icon Badge Alert -->
 <div class="alert-icon-badge">
   <div class="alert-badge">
@@ -881,40 +1054,51 @@ export default function AlertVariants() {
 }
 </style>`,
       component: (
-        <div style={{ 
-          padding: '16px',
-          background: '#f9fafb',
-          borderRadius: '12px',
-          display: 'flex',
-          alignItems: 'start',
-          gap: '16px'
-        }}>
-          <div style={{
-            width: '40px',
-            height: '40px',
-            background: '#10b981',
-            borderRadius: '50%',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            flexShrink: 0
-          }}>
+        <div
+          style={{
+            padding: "16px",
+            background: "#f9fafb",
+            borderRadius: "12px",
+            display: "flex",
+            alignItems: "start",
+            gap: "16px",
+          }}
+        >
+          <div
+            style={{
+              width: "40px",
+              height: "40px",
+              background: "#10b981",
+              borderRadius: "50%",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              flexShrink: 0,
+            }}
+          >
             <Check size={20} color="#ffffff" />
           </div>
-          <div style={{ flex: 1, paddingTop: '4px' }}>
-            <h4 style={{ fontSize: '14px', color: '#111827', margin: '0 0 4px 0', fontWeight: '600' }}>
+          <div style={{ flex: 1, paddingTop: "4px" }}>
+            <h4
+              style={{
+                fontSize: "14px",
+                color: "#111827",
+                margin: "0 0 4px 0",
+                fontWeight: "600",
+              }}
+            >
               Verification Complete
             </h4>
-            <p style={{ fontSize: '14px', color: '#6B7280', margin: 0 }}>
+            <p style={{ fontSize: "14px", color: "#6B7280", margin: 0 }}>
               Your account has been verified successfully.
             </p>
           </div>
         </div>
-      )
+      ),
     },
     {
-      id: 'security',
-      title: 'Variant 14: Security Alert',
+      id: "security",
+      title: "Variant 14: Security Alert",
       code: `<!-- Security Alert -->
 <div class="alert-security">
   <svg class="alert-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2">
@@ -961,30 +1145,44 @@ export default function AlertVariants() {
 }
 </style>`,
       component: (
-        <div style={{ 
-          padding: '16px',
-          background: '#fffbeb',
-          borderLeft: '4px solid #f59e0b',
-          borderRadius: '4px',
-          display: 'flex',
-          alignItems: 'start',
-          gap: '12px'
-        }}>
-          <Shield size={20} color="#f59e0b" style={{ flexShrink: 0, marginTop: '2px' }} />
+        <div
+          style={{
+            padding: "16px",
+            background: "#fffbeb",
+            borderLeft: "4px solid #f59e0b",
+            borderRadius: "4px",
+            display: "flex",
+            alignItems: "start",
+            gap: "12px",
+          }}
+        >
+          <Shield
+            size={20}
+            color="#f59e0b"
+            style={{ flexShrink: 0, marginTop: "2px" }}
+          />
           <div style={{ flex: 1 }}>
-            <h4 style={{ fontSize: '14px', color: '#78350f', margin: '0 0 4px 0', fontWeight: '600' }}>
+            <h4
+              style={{
+                fontSize: "14px",
+                color: "#78350f",
+                margin: "0 0 4px 0",
+                fontWeight: "600",
+              }}
+            >
               Security Alert
             </h4>
-            <p style={{ fontSize: '14px', color: '#92400e', margin: 0 }}>
-              New login detected from Chrome on Windows. If this wasn't you, please change your password immediately.
+            <p style={{ fontSize: "14px", color: "#92400e", margin: 0 }}>
+              New login detected from Chrome on Windows. If this wasn't you,
+              please change your password immediately.
             </p>
           </div>
         </div>
-      )
+      ),
     },
     {
-      id: 'dark-mode',
-      title: 'Variant 15: Dark Mode',
+      id: "dark-mode",
+      title: "Variant 15: Dark Mode",
       code: `<!-- Dark Mode Alert -->
 <div class="alert-dark-mode">
   <svg class="alert-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2">
@@ -1033,79 +1231,113 @@ export default function AlertVariants() {
 }
 </style>`,
       component: (
-        <div style={{ 
-          padding: '16px',
-          background: '#1f2937',
-          border: '1px solid #374151',
-          borderRadius: '8px',
-          display: 'flex',
-          alignItems: 'start',
-          gap: '12px'
-        }}>
-          <Info size={20} color="#60a5fa" style={{ flexShrink: 0, marginTop: '2px' }} />
+        <div
+          style={{
+            padding: "16px",
+            background: "#1f2937",
+            border: "1px solid #374151",
+            borderRadius: "8px",
+            display: "flex",
+            alignItems: "start",
+            gap: "12px",
+          }}
+        >
+          <Info
+            size={20}
+            color="#60a5fa"
+            style={{ flexShrink: 0, marginTop: "2px" }}
+          />
           <div style={{ flex: 1 }}>
-            <h4 style={{ fontSize: '14px', color: '#f9fafb', margin: '0 0 4px 0', fontWeight: '600' }}>
+            <h4
+              style={{
+                fontSize: "14px",
+                color: "#f9fafb",
+                margin: "0 0 4px 0",
+                fontWeight: "600",
+              }}
+            >
               System Maintenance
             </h4>
-            <p style={{ fontSize: '14px', color: '#d1d5db', margin: 0 }}>
+            <p style={{ fontSize: "14px", color: "#d1d5db", margin: 0 }}>
               Scheduled maintenance on Sunday, 2AM - 4AM UTC.
             </p>
           </div>
         </div>
-      )
-    }
+      ),
+    },
   ];
 
   return (
-    <div style={{ 
-      minHeight: '100vh',
-      background: 'linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%)',
-      padding: '100px 80px 80px 80px'
-    }}>
-      <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
-        <div style={{ 
-          textAlign: 'center',
-          marginBottom: '48px'
-        }}>
-          <h1 style={{ 
-            fontSize: '32px', 
-            fontWeight: '700', 
-            color: '#111827',
-            margin: '0 0 12px 0'
-          }}>
+    <div
+      style={{
+        minHeight: "100vh",
+        background: "linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%)",
+        padding: "100px 80px 80px 80px",
+      }}
+    >
+      <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
+        <div
+          style={{
+            textAlign: "center",
+            marginBottom: "48px",
+          }}
+        >
+          <h1
+            style={{
+              fontSize: "32px",
+              fontWeight: "700",
+              color: "#111827",
+              margin: "0 0 12px 0",
+            }}
+          >
             Alert Style Variants
           </h1>
-          <p style={{ 
-            fontSize: '16px', 
-            color: '#6B7280',
-            margin: 0
-          }}>
+          <p
+            style={{
+              fontSize: "16px",
+              color: "#6B7280",
+              margin: 0,
+            }}
+          >
             Explore 15 different alert and notification styles
           </p>
         </div>
 
-        <div style={{ 
-          display: 'grid',
-          gap: '24px'
-        }}>
+        <div
+          style={{
+            display: "grid",
+            gap: "24px",
+          }}
+        >
           {variants.map((variant) => (
-            <div 
+            <div
               key={variant.id}
-              style={{ 
-                background: 'white',
-                borderRadius: '16px',
-                padding: '32px',
-                boxShadow: '0 4px 16px rgba(0, 0, 0, 0.08)'
+              style={{
+                background: "white",
+                borderRadius: "16px",
+                padding: "32px",
+                boxShadow: "0 4px 16px rgba(0, 0, 0, 0.08)",
               }}
             >
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
-                <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#111827', margin: 0 }}>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  marginBottom: "16px",
+                }}
+              >
+                <h3
+                  style={{
+                    fontSize: "16px",
+                    fontWeight: "600",
+                    color: "#111827",
+                    margin: 0,
+                  }}
+                >
                   {variant.title}
                 </h3>
-                <CopyButton
-                  code={variant.code}
-                  variantId={variant.id}
-                />
+                <CopyButton code={variant.code} variantId={variant.id} />
               </div>
               {variant.component}
             </div>

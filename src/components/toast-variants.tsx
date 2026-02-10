@@ -330,7 +330,7 @@ export default function ToastVariants() {
                 fontSize: "14px",
                 fontWeight: "600",
                 color: "white",
-                background: "#6900ef",
+                background: "#3B82F6",
                 border: "none",
                 borderRadius: "8px",
                 cursor: "pointer",
@@ -432,7 +432,7 @@ export default function ToastVariants() {
                 fontSize: "14px",
                 fontWeight: "600",
                 color: "white",
-                background: "#6900ef",
+                background: "#3B82F6",
                 border: "none",
                 borderRadius: "8px",
                 cursor: "pointer",
@@ -483,7 +483,7 @@ export default function ToastVariants() {
                 fontSize: "14px",
                 fontWeight: "600",
                 color: "white",
-                background: "#6900ef",
+                background: "#3B82F6",
                 border: "none",
                 borderRadius: "8px",
                 cursor: "pointer",
@@ -534,7 +534,7 @@ export default function ToastVariants() {
                 fontSize: "14px",
                 fontWeight: "600",
                 color: "white",
-                background: "#6900ef",
+                background: "#3B82F6",
                 border: "none",
                 borderRadius: "8px",
                 cursor: "pointer",
@@ -585,7 +585,7 @@ export default function ToastVariants() {
                 fontSize: "14px",
                 fontWeight: "600",
                 color: "white",
-                background: "#6900ef",
+                background: "#3B82F6",
                 border: "none",
                 borderRadius: "8px",
                 cursor: "pointer",
@@ -636,7 +636,7 @@ export default function ToastVariants() {
                 fontSize: "14px",
                 fontWeight: "600",
                 color: "white",
-                background: "#6900ef",
+                background: "#3B82F6",
                 border: "none",
                 borderRadius: "8px",
                 cursor: "pointer",
@@ -687,7 +687,7 @@ export default function ToastVariants() {
                 fontSize: "14px",
                 fontWeight: "600",
                 color: "white",
-                background: "#6900ef",
+                background: "#3B82F6",
                 border: "none",
                 borderRadius: "8px",
                 cursor: "pointer",
@@ -845,7 +845,7 @@ export default function ToastVariants() {
                 key={toast.id}
                 style={{
                   background:
-                    "linear-gradient(135deg, #6900ef 0%, #8b3dff 100%)",
+                    "linear-gradient(135deg, #3B82F6 0%, #8b3dff 100%)",
                   borderRadius: "12px",
                   padding: "16px",
                   boxShadow: "0 8px 24px rgba(105, 0, 239, 0.3)",
@@ -934,7 +934,7 @@ export default function ToastVariants() {
                     marginBottom: "12px",
                   }}
                 >
-                  <Mail size={20} color="#6900ef" />
+                  <Mail size={20} color="#3B82F6" />
                   <p
                     style={{
                       fontSize: "14px",
@@ -952,7 +952,7 @@ export default function ToastVariants() {
                     padding: "8px 16px",
                     fontSize: "13px",
                     fontWeight: "600",
-                    color: "#6900ef",
+                    color: "#3B82F6",
                     background: "#f3e8ff",
                     border: "none",
                     borderRadius: "6px",
@@ -992,7 +992,7 @@ export default function ToastVariants() {
                     flexShrink: 0,
                   }}
                 >
-                  <Bell size={20} color="#6900ef" />
+                  <Bell size={20} color="#3B82F6" />
                 </div>
                 <div style={{ flex: 1 }}>
                   <p
@@ -1033,7 +1033,7 @@ export default function ToastVariants() {
                     marginBottom: "8px",
                   }}
                 >
-                  <Upload size={20} color="#6900ef" />
+                  <Upload size={20} color="#3B82F6" />
                   <p
                     style={{
                       fontSize: "14px",
@@ -1061,7 +1061,7 @@ export default function ToastVariants() {
                     style={{
                       width: "75%",
                       height: "100%",
-                      background: "#6900ef",
+                      background: "#3B82F6",
                       transition: "width 0.3s",
                     }}
                   />

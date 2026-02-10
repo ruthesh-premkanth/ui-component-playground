@@ -140,7 +140,7 @@ export default function EmptyStateVariants() {
                 fontSize: "14px",
                 fontWeight: "600",
                 color: "white",
-                background: "#6900ef",
+                background: "#3B82F6",
                 border: "none",
                 borderRadius: "8px",
                 cursor: "pointer",
@@ -176,7 +176,7 @@ export default function EmptyStateVariants() {
                 margin: "0 auto 16px",
               }}
             >
-              <Users size={40} color="#6900ef" />
+              <Users size={40} color="#3B82F6" />
             </div>
             <h3
               style={{
@@ -202,7 +202,7 @@ export default function EmptyStateVariants() {
                 padding: "10px 24px",
                 fontSize: "14px",
                 fontWeight: "600",
-                color: "#6900ef",
+                color: "#3B82F6",
                 background: "#f3e8ff",
                 border: "none",
                 borderRadius: "8px",
@@ -420,7 +420,7 @@ export default function EmptyStateVariants() {
                 margin: "0 auto 20px",
               }}
             >
-              <Mail size={60} color="#6900ef" />
+              <Mail size={60} color="#3B82F6" />
             </div>
             <h3
               style={{
@@ -481,7 +481,7 @@ export default function EmptyStateVariants() {
                 fontSize: "14px",
                 fontWeight: "600",
                 color: "white",
-                background: "#6900ef",
+                background: "#3B82F6",
                 border: "none",
                 borderRadius: "8px",
                 cursor: "pointer",
@@ -584,7 +584,7 @@ export default function EmptyStateVariants() {
                   padding: "10px 20px",
                   fontSize: "14px",
                   fontWeight: "600",
-                  color: "#6900ef",
+                  color: "#3B82F6",
                   background: "#f3e8ff",
                   border: "none",
                   borderRadius: "8px",
@@ -599,7 +599,7 @@ export default function EmptyStateVariants() {
                   fontSize: "14px",
                   fontWeight: "600",
                   color: "white",
-                  background: "#6900ef",
+                  background: "#3B82F6",
                   border: "none",
                   borderRadius: "8px",
                   cursor: "pointer",
@@ -805,7 +805,7 @@ export default function EmptyStateVariants() {
                 margin: "0 auto 16px",
               }}
             >
-              <Bell size={40} color="#6900ef" />
+              <Bell size={40} color="#3B82F6" />
             </div>
             <h3
               style={{

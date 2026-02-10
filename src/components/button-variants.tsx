@@ -1,11 +1,11 @@
-import { Play, Trash2, Check, ArrowRight, Heart, Star } from 'lucide-react';
-import { CopyButton } from './copy-button';
+import { Play, Trash2, Check, ArrowRight, Heart, Star } from "lucide-react";
+import { CopyButton } from "./copy-button";
 
 export default function ButtonVariants() {
   const variants = [
     {
-      id: 'primary-solid',
-      title: 'Primary Solid',
+      id: "primary-solid",
+      title: "Primary Solid",
       code: `<!-- Primary Solid Button -->
 <button class="btn-primary-solid">
   Click Me
@@ -17,7 +17,7 @@ export default function ButtonVariants() {
   font-size: 14px;
   font-weight: 600;
   color: #ffffff;
-  background: #6900ef;
+  background: #3B82F6;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -31,28 +31,30 @@ export default function ButtonVariants() {
 }
 </style>`,
       component: (
-        <button style={{
-          padding: '12px 24px',
-          fontSize: '14px',
-          fontWeight: '600',
-          color: 'white',
-          background: '#6900ef',
-          border: 'none',
-          borderRadius: '8px',
-          cursor: 'pointer',
-          transition: 'all 0.3s',
-          display: 'flex',
-          alignItems: 'center',
-          gap: '8px'
-        }}>
+        <button
+          style={{
+            padding: "12px 24px",
+            fontSize: "14px",
+            fontWeight: "600",
+            color: "white",
+            background: "#3B82F6",
+            border: "none",
+            borderRadius: "8px",
+            cursor: "pointer",
+            transition: "all 0.3s",
+            display: "flex",
+            alignItems: "center",
+            gap: "8px",
+          }}
+        >
           <Play size={16} />
           Click Me
         </button>
-      )
+      ),
     },
     {
-      id: 'gradient',
-      title: 'Gradient',
+      id: "gradient",
+      title: "Gradient",
       code: `<!-- Gradient Button -->
 <button class="btn-gradient">
   Gradient Button
@@ -64,7 +66,7 @@ export default function ButtonVariants() {
   font-size: 14px;
   font-weight: 600;
   color: #ffffff;
-  background: linear-gradient(135deg, #6900ef 0%, #8b3dff 100%);
+  background: linear-gradient(135deg, #3B82F6 0%, #8b3dff 100%);
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -79,25 +81,27 @@ export default function ButtonVariants() {
 }
 </style>`,
       component: (
-        <button style={{
-          padding: '12px 24px',
-          fontSize: '14px',
-          fontWeight: '600',
-          color: 'white',
-          background: 'linear-gradient(135deg, #6900ef 0%, #8b3dff 100%)',
-          border: 'none',
-          borderRadius: '8px',
-          cursor: 'pointer',
-          transition: 'all 0.3s',
-          boxShadow: '0 4px 12px rgba(105, 0, 239, 0.3)'
-        }}>
+        <button
+          style={{
+            padding: "12px 24px",
+            fontSize: "14px",
+            fontWeight: "600",
+            color: "white",
+            background: "linear-gradient(135deg, #3B82F6 0%, #8b3dff 100%)",
+            border: "none",
+            borderRadius: "8px",
+            cursor: "pointer",
+            transition: "all 0.3s",
+            boxShadow: "0 4px 12px rgba(105, 0, 239, 0.3)",
+          }}
+        >
           Gradient Button
         </button>
-      )
+      ),
     },
     {
-      id: 'outline',
-      title: 'Outline',
+      id: "outline",
+      title: "Outline",
       code: `<!-- Outline Button -->
 <button class="btn-outline">
   Outline Button
@@ -108,9 +112,9 @@ export default function ButtonVariants() {
   padding: 12px 24px;
   font-size: 14px;
   font-weight: 600;
-  color: #6900ef;
+  color: #3B82F6;
   background: transparent;
-  border: 2px solid #6900ef;
+  border: 2px solid #3B82F6;
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -118,29 +122,31 @@ export default function ButtonVariants() {
 }
 
 .btn-outline:hover {
-  background: #6900ef;
+  background: #3B82F6;
   color: #ffffff;
 }
 </style>`,
       component: (
-        <button style={{
-          padding: '12px 24px',
-          fontSize: '14px',
-          fontWeight: '600',
-          color: '#6900ef',
-          background: 'transparent',
-          border: '2px solid #6900ef',
-          borderRadius: '8px',
-          cursor: 'pointer',
-          transition: 'all 0.3s'
-        }}>
+        <button
+          style={{
+            padding: "12px 24px",
+            fontSize: "14px",
+            fontWeight: "600",
+            color: "#3B82F6",
+            background: "transparent",
+            border: "2px solid #3B82F6",
+            borderRadius: "8px",
+            cursor: "pointer",
+            transition: "all 0.3s",
+          }}
+        >
           Outline Button
         </button>
-      )
+      ),
     },
     {
-      id: 'ghost',
-      title: 'Ghost',
+      id: "ghost",
+      title: "Ghost",
       code: `<!-- Ghost Button -->
 <button class="btn-ghost">
   Ghost Button
@@ -151,7 +157,7 @@ export default function ButtonVariants() {
   padding: 12px 24px;
   font-size: 14px;
   font-weight: 600;
-  color: #6900ef;
+  color: #3B82F6;
   background: transparent;
   border: none;
   border-radius: 8px;
@@ -165,24 +171,26 @@ export default function ButtonVariants() {
 }
 </style>`,
       component: (
-        <button style={{
-          padding: '12px 24px',
-          fontSize: '14px',
-          fontWeight: '600',
-          color: '#6900ef',
-          background: 'transparent',
-          border: 'none',
-          borderRadius: '8px',
-          cursor: 'pointer',
-          transition: 'all 0.3s'
-        }}>
+        <button
+          style={{
+            padding: "12px 24px",
+            fontSize: "14px",
+            fontWeight: "600",
+            color: "#3B82F6",
+            background: "transparent",
+            border: "none",
+            borderRadius: "8px",
+            cursor: "pointer",
+            transition: "all 0.3s",
+          }}
+        >
           Ghost Button
         </button>
-      )
+      ),
     },
     {
-      id: 'soft',
-      title: 'Soft',
+      id: "soft",
+      title: "Soft",
       code: `<!-- Soft Button -->
 <button class="btn-soft">
   Soft Button
@@ -193,7 +201,7 @@ export default function ButtonVariants() {
   padding: 12px 24px;
   font-size: 14px;
   font-weight: 600;
-  color: #6900ef;
+  color: #3B82F6;
   background: #f3e8ff;
   border: none;
   border-radius: 8px;
@@ -207,24 +215,26 @@ export default function ButtonVariants() {
 }
 </style>`,
       component: (
-        <button style={{
-          padding: '12px 24px',
-          fontSize: '14px',
-          fontWeight: '600',
-          color: '#6900ef',
-          background: '#f3e8ff',
-          border: 'none',
-          borderRadius: '8px',
-          cursor: 'pointer',
-          transition: 'all 0.3s'
-        }}>
+        <button
+          style={{
+            padding: "12px 24px",
+            fontSize: "14px",
+            fontWeight: "600",
+            color: "#3B82F6",
+            background: "#f3e8ff",
+            border: "none",
+            borderRadius: "8px",
+            cursor: "pointer",
+            transition: "all 0.3s",
+          }}
+        >
           Soft Button
         </button>
-      )
+      ),
     },
     {
-      id: 'elevated',
-      title: 'Elevated',
+      id: "elevated",
+      title: "Elevated",
       code: `<!-- Elevated Button -->
 <button class="btn-elevated">
   Elevated Button
@@ -236,7 +246,7 @@ export default function ButtonVariants() {
   font-size: 14px;
   font-weight: 600;
   color: #ffffff;
-  background: #6900ef;
+  background: #3B82F6;
   border: none;
   border-radius: 12px;
   cursor: pointer;
@@ -251,25 +261,27 @@ export default function ButtonVariants() {
 }
 </style>`,
       component: (
-        <button style={{
-          padding: '12px 24px',
-          fontSize: '14px',
-          fontWeight: '600',
-          color: 'white',
-          background: '#6900ef',
-          border: 'none',
-          borderRadius: '12px',
-          cursor: 'pointer',
-          transition: 'all 0.3s',
-          boxShadow: '0 8px 24px rgba(105, 0, 239, 0.4)'
-        }}>
+        <button
+          style={{
+            padding: "12px 24px",
+            fontSize: "14px",
+            fontWeight: "600",
+            color: "white",
+            background: "#3B82F6",
+            border: "none",
+            borderRadius: "12px",
+            cursor: "pointer",
+            transition: "all 0.3s",
+            boxShadow: "0 8px 24px rgba(105, 0, 239, 0.4)",
+          }}
+        >
           Elevated Button
         </button>
-      )
+      ),
     },
     {
-      id: 'icon-only',
-      title: 'Icon Only',
+      id: "icon-only",
+      title: "Icon Only",
       code: `<!-- Icon Only Buttons -->
 <div class="btn-icon-group">
   <button class="btn-icon-primary">❤️</button>
@@ -298,7 +310,7 @@ export default function ButtonVariants() {
 
 .btn-icon-primary {
   color: #ffffff;
-  background: #6900ef;
+  background: #3B82F6;
 }
 
 .btn-icon-primary:hover {
@@ -307,7 +319,7 @@ export default function ButtonVariants() {
 }
 
 .btn-icon-soft {
-  color: #6900ef;
+  color: #3B82F6;
   background: #f3e8ff;
 }
 
@@ -317,47 +329,51 @@ export default function ButtonVariants() {
 }
 </style>`,
       component: (
-        <div style={{ display: 'flex', gap: '12px' }}>
-          <button style={{
-            width: '40px',
-            height: '40px',
-            fontSize: '14px',
-            fontWeight: '600',
-            color: 'white',
-            background: '#6900ef',
-            border: 'none',
-            borderRadius: '8px',
-            cursor: 'pointer',
-            transition: 'all 0.3s',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center'
-          }}>
+        <div style={{ display: "flex", gap: "12px" }}>
+          <button
+            style={{
+              width: "40px",
+              height: "40px",
+              fontSize: "14px",
+              fontWeight: "600",
+              color: "white",
+              background: "#3B82F6",
+              border: "none",
+              borderRadius: "8px",
+              cursor: "pointer",
+              transition: "all 0.3s",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
             <Heart size={18} />
           </button>
-          <button style={{
-            width: '40px',
-            height: '40px',
-            fontSize: '14px',
-            fontWeight: '600',
-            color: '#6900ef',
-            background: '#f3e8ff',
-            border: 'none',
-            borderRadius: '8px',
-            cursor: 'pointer',
-            transition: 'all 0.3s',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center'
-          }}>
+          <button
+            style={{
+              width: "40px",
+              height: "40px",
+              fontSize: "14px",
+              fontWeight: "600",
+              color: "#3B82F6",
+              background: "#f3e8ff",
+              border: "none",
+              borderRadius: "8px",
+              cursor: "pointer",
+              transition: "all 0.3s",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
             <Star size={18} />
           </button>
         </div>
-      )
+      ),
     },
     {
-      id: 'rounded-full',
-      title: 'Rounded Full',
+      id: "rounded-full",
+      title: "Rounded Full",
       code: `<!-- Rounded Full Button -->
 <button class="btn-rounded-full">
   Rounded Button
@@ -369,7 +385,7 @@ export default function ButtonVariants() {
   font-size: 14px;
   font-weight: 600;
   color: #ffffff;
-  background: #6900ef;
+  background: #3B82F6;
   border: none;
   border-radius: 24px;
   cursor: pointer;
@@ -383,24 +399,26 @@ export default function ButtonVariants() {
 }
 </style>`,
       component: (
-        <button style={{
-          padding: '12px 28px',
-          fontSize: '14px',
-          fontWeight: '600',
-          color: 'white',
-          background: '#6900ef',
-          border: 'none',
-          borderRadius: '24px',
-          cursor: 'pointer',
-          transition: 'all 0.3s'
-        }}>
+        <button
+          style={{
+            padding: "12px 28px",
+            fontSize: "14px",
+            fontWeight: "600",
+            color: "white",
+            background: "#3B82F6",
+            border: "none",
+            borderRadius: "24px",
+            cursor: "pointer",
+            transition: "all 0.3s",
+          }}
+        >
           Rounded Button
         </button>
-      )
+      ),
     },
     {
-      id: 'with-arrow',
-      title: 'With Arrow',
+      id: "with-arrow",
+      title: "With Arrow",
       code: `<!-- Button With Arrow -->
 <button class="btn-with-arrow">
   Continue →
@@ -412,7 +430,7 @@ export default function ButtonVariants() {
   font-size: 14px;
   font-weight: 600;
   color: #ffffff;
-  background: #6900ef;
+  background: #3B82F6;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -426,28 +444,30 @@ export default function ButtonVariants() {
 }
 </style>`,
       component: (
-        <button style={{
-          padding: '12px 24px',
-          fontSize: '14px',
-          fontWeight: '600',
-          color: 'white',
-          background: '#6900ef',
-          border: 'none',
-          borderRadius: '8px',
-          cursor: 'pointer',
-          transition: 'all 0.3s',
-          display: 'flex',
-          alignItems: 'center',
-          gap: '8px'
-        }}>
+        <button
+          style={{
+            padding: "12px 24px",
+            fontSize: "14px",
+            fontWeight: "600",
+            color: "white",
+            background: "#3B82F6",
+            border: "none",
+            borderRadius: "8px",
+            cursor: "pointer",
+            transition: "all 0.3s",
+            display: "flex",
+            alignItems: "center",
+            gap: "8px",
+          }}
+        >
           Continue
           <ArrowRight size={16} />
         </button>
-      )
+      ),
     },
     {
-      id: 'loading',
-      title: 'Loading State',
+      id: "loading",
+      title: "Loading State",
       code: `<!-- Loading Button -->
 <button class="btn-loading" disabled>
   <span class="btn-loading-spinner"></span>
@@ -460,7 +480,7 @@ export default function ButtonVariants() {
   font-size: 14px;
   font-weight: 600;
   color: #ffffff;
-  background: #6900ef;
+  background: #3B82F6;
   border: none;
   border-radius: 8px;
   cursor: not-allowed;
@@ -487,36 +507,40 @@ export default function ButtonVariants() {
 }
 </style>`,
       component: (
-        <button style={{
-          padding: '12px 24px',
-          fontSize: '14px',
-          fontWeight: '600',
-          color: 'white',
-          background: '#6900ef',
-          border: 'none',
-          borderRadius: '8px',
-          cursor: 'pointer',
-          transition: 'all 0.3s',
-          display: 'flex',
-          alignItems: 'center',
-          gap: '8px',
-          opacity: 0.7
-        }}>
-          <div style={{
-            width: '16px',
-            height: '16px',
-            border: '2px solid white',
-            borderTop: '2px solid transparent',
-            borderRadius: '50%',
-            animation: 'spin 1s linear infinite'
-          }} />
+        <button
+          style={{
+            padding: "12px 24px",
+            fontSize: "14px",
+            fontWeight: "600",
+            color: "white",
+            background: "#3B82F6",
+            border: "none",
+            borderRadius: "8px",
+            cursor: "pointer",
+            transition: "all 0.3s",
+            display: "flex",
+            alignItems: "center",
+            gap: "8px",
+            opacity: 0.7,
+          }}
+        >
+          <div
+            style={{
+              width: "16px",
+              height: "16px",
+              border: "2px solid white",
+              borderTop: "2px solid transparent",
+              borderRadius: "50%",
+              animation: "spin 1s linear infinite",
+            }}
+          />
           Loading...
         </button>
-      )
+      ),
     },
     {
-      id: 'destructive',
-      title: 'Destructive',
+      id: "destructive",
+      title: "Destructive",
       code: `<!-- Destructive Button -->
 <button class="btn-destructive">
   🗑️ Delete
@@ -542,28 +566,30 @@ export default function ButtonVariants() {
 }
 </style>`,
       component: (
-        <button style={{
-          padding: '12px 24px',
-          fontSize: '14px',
-          fontWeight: '600',
-          color: 'white',
-          background: '#ef4444',
-          border: 'none',
-          borderRadius: '8px',
-          cursor: 'pointer',
-          transition: 'all 0.3s',
-          display: 'flex',
-          alignItems: 'center',
-          gap: '8px'
-        }}>
+        <button
+          style={{
+            padding: "12px 24px",
+            fontSize: "14px",
+            fontWeight: "600",
+            color: "white",
+            background: "#ef4444",
+            border: "none",
+            borderRadius: "8px",
+            cursor: "pointer",
+            transition: "all 0.3s",
+            display: "flex",
+            alignItems: "center",
+            gap: "8px",
+          }}
+        >
           <Trash2 size={16} />
           Delete
         </button>
-      )
+      ),
     },
     {
-      id: 'success',
-      title: 'Success',
+      id: "success",
+      title: "Success",
       code: `<!-- Success Button -->
 <button class="btn-success">
   ✓ Confirm
@@ -589,28 +615,30 @@ export default function ButtonVariants() {
 }
 </style>`,
       component: (
-        <button style={{
-          padding: '12px 24px',
-          fontSize: '14px',
-          fontWeight: '600',
-          color: 'white',
-          background: '#10b981',
-          border: 'none',
-          borderRadius: '8px',
-          cursor: 'pointer',
-          transition: 'all 0.3s',
-          display: 'flex',
-          alignItems: 'center',
-          gap: '8px'
-        }}>
+        <button
+          style={{
+            padding: "12px 24px",
+            fontSize: "14px",
+            fontWeight: "600",
+            color: "white",
+            background: "#10b981",
+            border: "none",
+            borderRadius: "8px",
+            cursor: "pointer",
+            transition: "all 0.3s",
+            display: "flex",
+            alignItems: "center",
+            gap: "8px",
+          }}
+        >
           <Check size={16} />
           Confirm
         </button>
-      )
+      ),
     },
     {
-      id: 'large',
-      title: 'Large',
+      id: "large",
+      title: "Large",
       code: `<!-- Large Button -->
 <button class="btn-large">
   Large Button
@@ -622,7 +650,7 @@ export default function ButtonVariants() {
   font-size: 16px;
   font-weight: 600;
   color: #ffffff;
-  background: #6900ef;
+  background: #3B82F6;
   border: none;
   border-radius: 12px;
   cursor: pointer;
@@ -636,24 +664,26 @@ export default function ButtonVariants() {
 }
 </style>`,
       component: (
-        <button style={{
-          padding: '16px 32px',
-          fontSize: '16px',
-          fontWeight: '600',
-          color: 'white',
-          background: '#6900ef',
-          border: 'none',
-          borderRadius: '12px',
-          cursor: 'pointer',
-          transition: 'all 0.3s'
-        }}>
+        <button
+          style={{
+            padding: "16px 32px",
+            fontSize: "16px",
+            fontWeight: "600",
+            color: "white",
+            background: "#3B82F6",
+            border: "none",
+            borderRadius: "12px",
+            cursor: "pointer",
+            transition: "all 0.3s",
+          }}
+        >
           Large Button
         </button>
-      )
+      ),
     },
     {
-      id: 'small',
-      title: 'Small',
+      id: "small",
+      title: "Small",
       code: `<!-- Small Button -->
 <button class="btn-small">
   Small Button
@@ -665,7 +695,7 @@ export default function ButtonVariants() {
   font-size: 12px;
   font-weight: 600;
   color: #ffffff;
-  background: #6900ef;
+  background: #3B82F6;
   border: none;
   border-radius: 6px;
   cursor: pointer;
@@ -679,24 +709,26 @@ export default function ButtonVariants() {
 }
 </style>`,
       component: (
-        <button style={{
-          padding: '8px 16px',
-          fontSize: '12px',
-          fontWeight: '600',
-          color: 'white',
-          background: '#6900ef',
-          border: 'none',
-          borderRadius: '6px',
-          cursor: 'pointer',
-          transition: 'all 0.3s'
-        }}>
+        <button
+          style={{
+            padding: "8px 16px",
+            fontSize: "12px",
+            fontWeight: "600",
+            color: "white",
+            background: "#3B82F6",
+            border: "none",
+            borderRadius: "6px",
+            cursor: "pointer",
+            transition: "all 0.3s",
+          }}
+        >
           Small Button
         </button>
-      )
+      ),
     },
     {
-      id: 'group',
-      title: 'Button Group',
+      id: "group",
+      title: "Button Group",
       code: `<!-- Button Group -->
 <div class="btn-group">
   <button class="btn-group-item">Left</button>
@@ -716,7 +748,7 @@ export default function ButtonVariants() {
   padding: 10px 20px;
   font-size: 14px;
   font-weight: 600;
-  color: #6900ef;
+  color: #3B82F6;
   background: #ffffff;
   border: none;
   border-right: 1px solid #e5e7eb;
@@ -735,105 +767,139 @@ export default function ButtonVariants() {
 
 .btn-group-item.active {
   color: #ffffff;
-  background: #6900ef;
+  background: #3B82F6;
 }
 </style>`,
       component: (
-        <div style={{ display: 'inline-flex', border: '2px solid #e5e7eb', borderRadius: '8px', overflow: 'hidden' }}>
-          <button style={{
-            padding: '10px 20px',
-            fontSize: '14px',
-            fontWeight: '600',
-            color: '#6900ef',
-            background: 'white',
-            border: 'none',
-            borderRight: '1px solid #e5e7eb',
-            cursor: 'pointer',
-            transition: 'all 0.3s'
-          }}>
+        <div
+          style={{
+            display: "inline-flex",
+            border: "2px solid #e5e7eb",
+            borderRadius: "8px",
+            overflow: "hidden",
+          }}
+        >
+          <button
+            style={{
+              padding: "10px 20px",
+              fontSize: "14px",
+              fontWeight: "600",
+              color: "#3B82F6",
+              background: "white",
+              border: "none",
+              borderRight: "1px solid #e5e7eb",
+              cursor: "pointer",
+              transition: "all 0.3s",
+            }}
+          >
             Left
           </button>
-          <button style={{
-            padding: '10px 20px',
-            fontSize: '14px',
-            fontWeight: '600',
-            color: 'white',
-            background: '#6900ef',
-            border: 'none',
-            borderRight: '1px solid #e5e7eb',
-            cursor: 'pointer',
-            transition: 'all 0.3s'
-          }}>
+          <button
+            style={{
+              padding: "10px 20px",
+              fontSize: "14px",
+              fontWeight: "600",
+              color: "white",
+              background: "#3B82F6",
+              border: "none",
+              borderRight: "1px solid #e5e7eb",
+              cursor: "pointer",
+              transition: "all 0.3s",
+            }}
+          >
             Center
           </button>
-          <button style={{
-            padding: '10px 20px',
-            fontSize: '14px',
-            fontWeight: '600',
-            color: '#6900ef',
-            background: 'white',
-            border: 'none',
-            cursor: 'pointer',
-            transition: 'all 0.3s'
-          }}>
+          <button
+            style={{
+              padding: "10px 20px",
+              fontSize: "14px",
+              fontWeight: "600",
+              color: "#3B82F6",
+              background: "white",
+              border: "none",
+              cursor: "pointer",
+              transition: "all 0.3s",
+            }}
+          >
             Right
           </button>
         </div>
-      )
-    }
+      ),
+    },
   ];
 
   return (
-    <div style={{ 
-      minHeight: '100vh',
-      background: 'linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%)',
-      padding: '100px 80px 80px 80px'
-    }}>
-      <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
-        <div style={{ 
-          textAlign: 'center',
-          marginBottom: '48px'
-        }}>
-          <h1 style={{ 
-            fontSize: '32px', 
-            fontWeight: '700', 
-            color: '#111827',
-            margin: '0 0 12px 0'
-          }}>
+    <div
+      style={{
+        minHeight: "100vh",
+        background: "linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%)",
+        padding: "100px 80px 80px 80px",
+      }}
+    >
+      <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
+        <div
+          style={{
+            textAlign: "center",
+            marginBottom: "48px",
+          }}
+        >
+          <h1
+            style={{
+              fontSize: "32px",
+              fontWeight: "700",
+              color: "#111827",
+              margin: "0 0 12px 0",
+            }}
+          >
             Button Style Variants
           </h1>
-          <p style={{ 
-            fontSize: '16px', 
-            color: '#6B7280',
-            margin: 0
-          }}>
+          <p
+            style={{
+              fontSize: "16px",
+              color: "#6B7280",
+              margin: 0,
+            }}
+          >
             Explore 15 different button styles for your interface
           </p>
         </div>
 
-        <div style={{ 
-          display: 'grid',
-          gridTemplateColumns: 'repeat(3, 1fr)',
-          gap: '24px'
-        }}>
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(3, 1fr)",
+            gap: "24px",
+          }}
+        >
           {variants.map((variant) => (
-            <div 
+            <div
               key={variant.id}
-              style={{ 
-                background: 'white',
-                borderRadius: '16px',
-                padding: '32px',
-                boxShadow: '0 4px 16px rgba(0, 0, 0, 0.08)'
+              style={{
+                background: "white",
+                borderRadius: "16px",
+                padding: "32px",
+                boxShadow: "0 4px 16px rgba(0, 0, 0, 0.08)",
               }}
             >
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
-                <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#111827', margin: 0 }}>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  marginBottom: "16px",
+                }}
+              >
+                <h3
+                  style={{
+                    fontSize: "16px",
+                    fontWeight: "600",
+                    color: "#111827",
+                    margin: 0,
+                  }}
+                >
                   {variant.title}
                 </h3>
-                <CopyButton
-                  code={variant.code}
-                  variantId={variant.id}
-                />
+                <CopyButton code={variant.code} variantId={variant.id} />
               </div>
               {variant.component}
             </div>

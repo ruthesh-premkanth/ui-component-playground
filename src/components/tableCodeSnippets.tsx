@@ -419,7 +419,7 @@ export const tableCode = {
 
 .action-view,
 .action-edit {
-  color: #6900ef;
+  color: #3B82F6;
 }
 
 .action-delete {
@@ -618,7 +618,7 @@ export const tableCode = {
 }
 
 .dark-header-table thead tr {
-  background: #6900ef;
+  background: #3B82F6;
 }
 
 .dark-header-table th {
@@ -911,7 +911,7 @@ export const tableCode = {
 
 .col-name {
   background: #f3e8ff;
-  border-bottom: 3px solid #6900ef;
+  border-bottom: 3px solid #3B82F6;
 }
 
 .col-email {

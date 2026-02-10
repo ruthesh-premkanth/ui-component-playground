@@ -254,7 +254,7 @@ export const toastCode = {
 }
 
 .toast-purple-gradient {
-  background: linear-gradient(135deg, #6900ef 0%, #8b3dff 100%);
+  background: linear-gradient(135deg, #3B82F6 0%, #8b3dff 100%);
 }
 
 .toast-purple-gradient .icon {
@@ -369,7 +369,7 @@ export const toastCode = {
 }
 
 .toast-action .icon {
-  color: #6900ef;
+  color: #3B82F6;
 }
 
 .toast-message {
@@ -384,7 +384,7 @@ export const toastCode = {
   width: 100%;
   padding: 8px;
   background: #f3e8ff;
-  color: #6900ef;
+  color: #3B82F6;
   border: none;
   border-radius: 6px;
   font-weight: 600;
@@ -480,7 +480,7 @@ export const toastCode = {
 }
 
 .icon {
-  color: #6900ef;
+  color: #3B82F6;
 }
 
 .percent {
@@ -498,7 +498,7 @@ export const toastCode = {
 .bar {
   width: 75%;
   height: 100%;
-  background: #6900ef;
+  background: #3B82F6;
 }
 </style>`,
   compactToastCode: `<!-- Compact Toast -->
