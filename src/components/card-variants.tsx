@@ -1,15 +1,35 @@
-import { Table, ArrowRight, Sparkles, ChevronRight, ExternalLink } from 'lucide-react';
-import { CopyButton } from './copy-button';
+import {
+  Table,
+  ArrowRight,
+  Sparkles,
+  ChevronRight,
+  ExternalLink,
+} from "lucide-react";
+import { CopyButton } from "./copy-button";
 
 // Variant 1: Minimal Border
 function CardVariant1() {
   return (
     <div>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
-        <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#111827', margin: 0 }}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          marginBottom: "16px",
+        }}
+      >
+        <h3
+          style={{
+            fontSize: "16px",
+            fontWeight: "600",
+            color: "#111827",
+            margin: 0,
+          }}
+        >
           Variant 1: Minimal Border
         </h3>
-        <CopyButton 
+        <CopyButton
           variantId="card-minimal-border"
           code={`<style>
 .card-minimal-border {
@@ -69,43 +89,63 @@ function CardVariant1() {
       </div>
       <div
         style={{
-          background: 'white',
-          border: '2px solid #e5e7eb',
-          borderRadius: '8px',
-          padding: '24px',
-          cursor: 'pointer',
-          transition: 'all 0.3s',
-          height: '220px',
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'space-between'
+          background: "white",
+          border: "2px solid #e5e7eb",
+          borderRadius: "8px",
+          padding: "24px",
+          cursor: "pointer",
+          transition: "all 0.3s",
+          height: "220px",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
         }}
         onMouseEnter={(e) => {
-          e.currentTarget.style.borderColor = '#6900ef';
+          e.currentTarget.style.borderColor = "#6900ef";
         }}
         onMouseLeave={(e) => {
-          e.currentTarget.style.borderColor = '#e5e7eb';
+          e.currentTarget.style.borderColor = "#e5e7eb";
         }}
       >
         <div>
-          <div style={{ 
-            width: '40px', 
-            height: '40px', 
-            background: '#6900ef',
-            borderRadius: '8px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            marginBottom: '16px'
-          }}>
+          <div
+            style={{
+              width: "40px",
+              height: "40px",
+              background: "#6900ef",
+              borderRadius: "8px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              marginBottom: "16px",
+            }}
+          >
             <Table size={24} color="white" />
           </div>
-          <h3 style={{ fontSize: '18px', fontWeight: '600', color: '#111827', margin: '0 0 8px 0' }}>Analytics</h3>
-          <p style={{ fontSize: '14px', color: '#6B7280', margin: 0, lineHeight: '1.5' }}>
+          <h3
+            style={{
+              fontSize: "18px",
+              fontWeight: "600",
+              color: "#111827",
+              margin: "0 0 8px 0",
+            }}
+          >
+            Analytics
+          </h3>
+          <p
+            style={{
+              fontSize: "14px",
+              color: "#6B7280",
+              margin: 0,
+              lineHeight: "1.5",
+            }}
+          >
             Track performance and insights
           </p>
         </div>
-        <div style={{ fontSize: '12px', color: '#6900ef', fontWeight: '600' }}>Learn more →</div>
+        <div style={{ fontSize: "12px", color: "#6900ef", fontWeight: "600" }}>
+          Learn more →
+        </div>
       </div>
     </div>
   );
@@ -115,11 +155,25 @@ function CardVariant1() {
 function CardVariant2() {
   return (
     <div>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
-        <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#111827', margin: 0 }}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          marginBottom: "16px",
+        }}
+      >
+        <h3
+          style={{
+            fontSize: "16px",
+            fontWeight: "600",
+            color: "#111827",
+            margin: 0,
+          }}
+        >
           Variant 2: Soft Shadow
         </h3>
-        <CopyButton 
+        <CopyButton
           variantId="card-soft-shadow"
           code={`<style>
 .card-shadow {
@@ -176,42 +230,61 @@ function CardVariant2() {
       </div>
       <div
         style={{
-          background: 'white',
-          border: 'none',
-          borderRadius: '12px',
-          padding: '24px',
-          cursor: 'pointer',
-          transition: 'all 0.3s',
-          height: '220px',
-          boxShadow: '0 2px 8px rgba(0,0,0,0.06)',
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'space-between'
+          background: "white",
+          border: "none",
+          borderRadius: "12px",
+          padding: "24px",
+          cursor: "pointer",
+          transition: "all 0.3s",
+          height: "220px",
+          boxShadow: "0 2px 8px rgba(0,0,0,0.06)",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
         }}
         onMouseEnter={(e) => {
-          e.currentTarget.style.boxShadow = '0 8px 24px rgba(105, 0, 239, 0.15)';
-          e.currentTarget.style.transform = 'translateY(-4px)';
+          e.currentTarget.style.boxShadow =
+            "0 8px 24px rgba(105, 0, 239, 0.15)";
+          e.currentTarget.style.transform = "translateY(-4px)";
         }}
         onMouseLeave={(e) => {
-          e.currentTarget.style.boxShadow = '0 2px 8px rgba(0,0,0,0.06)';
-          e.currentTarget.style.transform = 'translateY(0)';
+          e.currentTarget.style.boxShadow = "0 2px 8px rgba(0,0,0,0.06)";
+          e.currentTarget.style.transform = "translateY(0)";
         }}
       >
         <div>
-          <div style={{ 
-            width: '48px', 
-            height: '48px', 
-            background: '#f3e8ff',
-            borderRadius: '12px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            marginBottom: '16px'
-          }}>
+          <div
+            style={{
+              width: "48px",
+              height: "48px",
+              background: "#f3e8ff",
+              borderRadius: "12px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              marginBottom: "16px",
+            }}
+          >
             <Table size={24} color="#6900ef" />
           </div>
-          <h3 style={{ fontSize: '18px', fontWeight: '600', color: '#111827', margin: '0 0 8px 0' }}>Analytics</h3>
-          <p style={{ fontSize: '14px', color: '#6B7280', margin: 0, lineHeight: '1.5' }}>
+          <h3
+            style={{
+              fontSize: "18px",
+              fontWeight: "600",
+              color: "#111827",
+              margin: "0 0 8px 0",
+            }}
+          >
+            Analytics
+          </h3>
+          <p
+            style={{
+              fontSize: "14px",
+              color: "#6B7280",
+              margin: 0,
+              lineHeight: "1.5",
+            }}
+          >
             Track performance and insights
           </p>
         </div>
@@ -224,11 +297,25 @@ function CardVariant2() {
 function CardVariant3() {
   return (
     <div>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
-        <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#111827', margin: 0 }}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          marginBottom: "16px",
+        }}
+      >
+        <h3
+          style={{
+            fontSize: "16px",
+            fontWeight: "600",
+            color: "#111827",
+            margin: 0,
+          }}
+        >
           Variant 3: Left Border Accent
         </h3>
-        <CopyButton 
+        <CopyButton
           variantId="card-left-border"
           code={`<style>
 .card-left-border {
@@ -288,43 +375,61 @@ function CardVariant3() {
       </div>
       <div
         style={{
-          background: 'white',
-          borderLeft: '4px solid #6900ef',
-          border: '1px solid #e5e7eb',
-          borderRadius: '8px',
-          padding: '24px',
-          cursor: 'pointer',
-          transition: 'all 0.3s',
-          height: '220px',
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'space-between'
+          background: "white",
+          borderLeft: "4px solid #6900ef",
+          border: "1px solid #e5e7eb",
+          borderRadius: "8px",
+          padding: "24px",
+          cursor: "pointer",
+          transition: "all 0.3s",
+          height: "220px",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
         }}
         onMouseEnter={(e) => {
-          e.currentTarget.style.background = '#fafafa';
+          e.currentTarget.style.background = "#fafafa";
         }}
         onMouseLeave={(e) => {
-          e.currentTarget.style.background = 'white';
+          e.currentTarget.style.background = "white";
         }}
       >
         <div>
-          <h3 style={{ fontSize: '20px', fontWeight: '700', color: '#111827', margin: '0 0 8px 0' }}>Analytics</h3>
-          <p style={{ fontSize: '14px', color: '#6B7280', margin: '0 0 16px 0', lineHeight: '1.5' }}>
+          <h3
+            style={{
+              fontSize: "20px",
+              fontWeight: "700",
+              color: "#111827",
+              margin: "0 0 8px 0",
+            }}
+          >
+            Analytics
+          </h3>
+          <p
+            style={{
+              fontSize: "14px",
+              color: "#6B7280",
+              margin: "0 0 16px 0",
+              lineHeight: "1.5",
+            }}
+          >
             Track performance and insights
           </p>
-          <div style={{ 
-            display: 'inline-block',
-            padding: '4px 12px',
-            background: '#f3e8ff',
-            color: '#6900ef',
-            borderRadius: '16px',
-            fontSize: '12px',
-            fontWeight: '600'
-          }}>
+          <div
+            style={{
+              display: "inline-block",
+              padding: "4px 12px",
+              background: "#f3e8ff",
+              color: "#6900ef",
+              borderRadius: "16px",
+              fontSize: "12px",
+              fontWeight: "600",
+            }}
+          >
             Popular
           </div>
         </div>
-        <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+        <div style={{ display: "flex", justifyContent: "flex-end" }}>
           <ArrowRight size={20} color="#6900ef" />
         </div>
       </div>
@@ -336,11 +441,25 @@ function CardVariant3() {
 function CardVariant4() {
   return (
     <div>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
-        <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#111827', margin: 0 }}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          marginBottom: "16px",
+        }}
+      >
+        <h3
+          style={{
+            fontSize: "16px",
+            fontWeight: "600",
+            color: "#111827",
+            margin: 0,
+          }}
+        >
           Variant 4: Gradient Background
         </h3>
-        <CopyButton 
+        <CopyButton
           variantId="card-gradient"
           code={`<style>
 .card-gradient {
@@ -407,50 +526,70 @@ function CardVariant4() {
       </div>
       <div
         style={{
-          background: 'linear-gradient(135deg, #6900ef 0%, #8b3dff 100%)',
-          border: 'none',
-          borderRadius: '16px',
-          padding: '24px',
-          cursor: 'pointer',
-          transition: 'all 0.3s',
-          height: '220px',
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'space-between',
-          position: 'relative',
-          overflow: 'hidden'
+          background: "linear-gradient(135deg, #6900ef 0%, #8b3dff 100%)",
+          border: "none",
+          borderRadius: "16px",
+          padding: "24px",
+          cursor: "pointer",
+          transition: "all 0.3s",
+          height: "220px",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
+          position: "relative",
+          overflow: "hidden",
         }}
         onMouseEnter={(e) => {
-          e.currentTarget.style.transform = 'scale(1.02)';
+          e.currentTarget.style.transform = "scale(1.02)";
         }}
         onMouseLeave={(e) => {
-          e.currentTarget.style.transform = 'scale(1)';
+          e.currentTarget.style.transform = "scale(1)";
         }}
       >
-        <div style={{
-          position: 'absolute',
-          top: '-50px',
-          right: '-50px',
-          width: '150px',
-          height: '150px',
-          background: 'rgba(255,255,255,0.1)',
-          borderRadius: '50%'
-        }}></div>
+        <div
+          style={{
+            position: "absolute",
+            top: "-50px",
+            right: "-50px",
+            width: "150px",
+            height: "150px",
+            background: "rgba(255,255,255,0.1)",
+            borderRadius: "50%",
+          }}
+        ></div>
         <div>
-          <div style={{ 
-            width: '48px', 
-            height: '48px', 
-            background: 'rgba(255,255,255,0.2)',
-            borderRadius: '12px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            marginBottom: '16px'
-          }}>
+          <div
+            style={{
+              width: "48px",
+              height: "48px",
+              background: "rgba(255,255,255,0.2)",
+              borderRadius: "12px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              marginBottom: "16px",
+            }}
+          >
             <Table size={24} color="white" />
           </div>
-          <h3 style={{ fontSize: '20px', fontWeight: '700', color: 'white', margin: '0 0 8px 0' }}>Analytics</h3>
-          <p style={{ fontSize: '14px', color: 'rgba(255,255,255,0.9)', margin: 0, lineHeight: '1.5' }}>
+          <h3
+            style={{
+              fontSize: "20px",
+              fontWeight: "700",
+              color: "white",
+              margin: "0 0 8px 0",
+            }}
+          >
+            Analytics
+          </h3>
+          <p
+            style={{
+              fontSize: "14px",
+              color: "rgba(255,255,255,0.9)",
+              margin: 0,
+              lineHeight: "1.5",
+            }}
+          >
             Track performance and insights
           </p>
         </div>
@@ -463,11 +602,25 @@ function CardVariant4() {
 function CardVariant5() {
   return (
     <div>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
-        <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#111827', margin: 0 }}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          marginBottom: "16px",
+        }}
+      >
+        <h3
+          style={{
+            fontSize: "16px",
+            fontWeight: "600",
+            color: "#111827",
+            margin: 0,
+          }}
+        >
           Variant 5: Outlined Hover
         </h3>
-        <CopyButton 
+        <CopyButton
           variantId="card-outlined-hover"
           code={`<style>
 .card-outlined {
@@ -531,43 +684,68 @@ function CardVariant5() {
       </div>
       <div
         style={{
-          background: 'white',
-          border: '2px solid transparent',
-          borderRadius: '12px',
-          padding: '24px',
-          cursor: 'pointer',
-          transition: 'all 0.3s',
-          height: '220px',
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'space-between',
-          boxShadow: '0 1px 3px rgba(0,0,0,0.05)'
+          background: "white",
+          border: "2px solid transparent",
+          borderRadius: "12px",
+          padding: "24px",
+          cursor: "pointer",
+          transition: "all 0.3s",
+          height: "220px",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
+          boxShadow: "0 1px 3px rgba(0,0,0,0.05)",
         }}
         onMouseEnter={(e) => {
-          e.currentTarget.style.borderColor = '#6900ef';
-          e.currentTarget.style.background = '#fafbff';
+          e.currentTarget.style.borderColor = "#6900ef";
+          e.currentTarget.style.background = "#fafbff";
         }}
         onMouseLeave={(e) => {
-          e.currentTarget.style.borderColor = 'transparent';
-          e.currentTarget.style.background = 'white';
+          e.currentTarget.style.borderColor = "transparent";
+          e.currentTarget.style.background = "white";
         }}
       >
         <div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
-            <div style={{ 
-              width: '56px', 
-              height: '56px', 
-              background: '#6900ef',
-              borderRadius: '50%',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center'
-            }}>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "12px",
+              marginBottom: "16px",
+            }}
+          >
+            <div
+              style={{
+                width: "56px",
+                height: "56px",
+                background: "#6900ef",
+                borderRadius: "50%",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
               <Table size={28} color="white" />
             </div>
-            <h3 style={{ fontSize: '22px', fontWeight: '700', color: '#111827', margin: 0 }}>Analytics</h3>
+            <h3
+              style={{
+                fontSize: "22px",
+                fontWeight: "700",
+                color: "#111827",
+                margin: 0,
+              }}
+            >
+              Analytics
+            </h3>
           </div>
-          <p style={{ fontSize: '14px', color: '#6B7280', margin: 0, lineHeight: '1.5' }}>
+          <p
+            style={{
+              fontSize: "14px",
+              color: "#6B7280",
+              margin: 0,
+              lineHeight: "1.5",
+            }}
+          >
             Track performance and insights
           </p>
         </div>
@@ -580,11 +758,25 @@ function CardVariant5() {
 function CardVariant6() {
   return (
     <div>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
-        <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#111827', margin: 0 }}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          marginBottom: "16px",
+        }}
+      >
+        <h3
+          style={{
+            fontSize: "16px",
+            fontWeight: "600",
+            color: "#111827",
+            margin: 0,
+          }}
+        >
           Variant 6: Top Stripe
         </h3>
-        <CopyButton 
+        <CopyButton
           variantId="card-top-stripe"
           code={`<style>
 .card-top-stripe {
@@ -640,32 +832,57 @@ function CardVariant6() {
       </div>
       <div
         style={{
-          background: 'white',
-          border: '1px solid #e5e7eb',
-          borderTop: '6px solid #6900ef',
-          borderRadius: '12px',
-          padding: '24px',
-          cursor: 'pointer',
-          transition: 'all 0.3s',
-          height: '220px',
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'space-between'
+          background: "white",
+          border: "1px solid #e5e7eb",
+          borderTop: "6px solid #6900ef",
+          borderRadius: "12px",
+          padding: "24px",
+          cursor: "pointer",
+          transition: "all 0.3s",
+          height: "220px",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
         }}
         onMouseEnter={(e) => {
-          e.currentTarget.style.boxShadow = '0 4px 12px rgba(0,0,0,0.08)';
+          e.currentTarget.style.boxShadow = "0 4px 12px rgba(0,0,0,0.08)";
         }}
         onMouseLeave={(e) => {
-          e.currentTarget.style.boxShadow = 'none';
+          e.currentTarget.style.boxShadow = "none";
         }}
       >
         <div>
-          <h3 style={{ fontSize: '20px', fontWeight: '700', color: '#111827', margin: '0 0 8px 0' }}>Analytics</h3>
-          <p style={{ fontSize: '14px', color: '#6B7280', margin: '0 0 16px 0', lineHeight: '1.5' }}>
+          <h3
+            style={{
+              fontSize: "20px",
+              fontWeight: "700",
+              color: "#111827",
+              margin: "0 0 8px 0",
+            }}
+          >
+            Analytics
+          </h3>
+          <p
+            style={{
+              fontSize: "14px",
+              color: "#6B7280",
+              margin: "0 0 16px 0",
+              lineHeight: "1.5",
+            }}
+          >
             Track performance and insights
           </p>
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#6900ef', fontSize: '14px', fontWeight: '600' }}>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "8px",
+            color: "#6900ef",
+            fontSize: "14px",
+            fontWeight: "600",
+          }}
+        >
           <span>Select</span>
           <ChevronRight size={18} />
         </div>
@@ -678,11 +895,25 @@ function CardVariant6() {
 function CardVariant7() {
   return (
     <div>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
-        <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#111827', margin: 0 }}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          marginBottom: "16px",
+        }}
+      >
+        <h3
+          style={{
+            fontSize: "16px",
+            fontWeight: "600",
+            color: "#111827",
+            margin: 0,
+          }}
+        >
           Variant 7: Glass Morphism
         </h3>
-        <CopyButton 
+        <CopyButton
           variantId="card-glass-morphism"
           code={`<style>
 .card-glass {
@@ -741,43 +972,61 @@ function CardVariant7() {
       </div>
       <div
         style={{
-          background: 'rgba(255, 255, 255, 0.7)',
-          backdropFilter: 'blur(10px)',
-          border: '1px solid rgba(255,255,255,0.8)',
-          borderRadius: '16px',
-          padding: '24px',
-          cursor: 'pointer',
-          transition: 'all 0.3s',
-          height: '220px',
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'space-between',
-          boxShadow: '0 8px 32px rgba(105, 0, 239, 0.1)'
+          background: "rgba(255, 255, 255, 0.7)",
+          backdropFilter: "blur(10px)",
+          border: "1px solid rgba(255,255,255,0.8)",
+          borderRadius: "16px",
+          padding: "24px",
+          cursor: "pointer",
+          transition: "all 0.3s",
+          height: "220px",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
+          boxShadow: "0 8px 32px rgba(105, 0, 239, 0.1)",
         }}
         onMouseEnter={(e) => {
-          e.currentTarget.style.background = 'rgba(255, 255, 255, 0.9)';
-          e.currentTarget.style.transform = 'translateY(-4px)';
+          e.currentTarget.style.background = "rgba(255, 255, 255, 0.9)";
+          e.currentTarget.style.transform = "translateY(-4px)";
         }}
         onMouseLeave={(e) => {
-          e.currentTarget.style.background = 'rgba(255, 255, 255, 0.7)';
-          e.currentTarget.style.transform = 'translateY(0)';
+          e.currentTarget.style.background = "rgba(255, 255, 255, 0.7)";
+          e.currentTarget.style.transform = "translateY(0)";
         }}
       >
         <div>
-          <div style={{ 
-            width: '52px', 
-            height: '52px', 
-            background: 'linear-gradient(135deg, #6900ef, #8b3dff)',
-            borderRadius: '16px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            marginBottom: '16px'
-          }}>
+          <div
+            style={{
+              width: "52px",
+              height: "52px",
+              background: "linear-gradient(135deg, #6900ef, #8b3dff)",
+              borderRadius: "16px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              marginBottom: "16px",
+            }}
+          >
             <Table size={26} color="white" />
           </div>
-          <h3 style={{ fontSize: '18px', fontWeight: '600', color: '#111827', margin: '0 0 8px 0' }}>Analytics</h3>
-          <p style={{ fontSize: '14px', color: '#6B7280', margin: 0, lineHeight: '1.5' }}>
+          <h3
+            style={{
+              fontSize: "18px",
+              fontWeight: "600",
+              color: "#111827",
+              margin: "0 0 8px 0",
+            }}
+          >
+            Analytics
+          </h3>
+          <p
+            style={{
+              fontSize: "14px",
+              color: "#6B7280",
+              margin: 0,
+              lineHeight: "1.5",
+            }}
+          >
             Track performance and insights
           </p>
         </div>
@@ -790,11 +1039,25 @@ function CardVariant7() {
 function CardVariant8() {
   return (
     <div>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
-        <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#111827', margin: 0 }}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          marginBottom: "16px",
+        }}
+      >
+        <h3
+          style={{
+            fontSize: "16px",
+            fontWeight: "600",
+            color: "#111827",
+            margin: 0,
+          }}
+        >
           Variant 8: Compact Horizontal
         </h3>
-        <CopyButton 
+        <CopyButton
           variantId="card-compact-horizontal"
           code={`<style>
 .card-compact {
@@ -869,57 +1132,78 @@ function CardVariant8() {
       </div>
       <div
         style={{
-          background: 'white',
-          border: '1px solid #e5e7eb',
-          borderRadius: '12px',
-          padding: '20px',
-          cursor: 'pointer',
-          transition: 'all 0.3s',
-          height: '220px',
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'space-between'
+          background: "white",
+          border: "1px solid #e5e7eb",
+          borderRadius: "12px",
+          padding: "20px",
+          cursor: "pointer",
+          transition: "all 0.3s",
+          height: "220px",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
         }}
         onMouseEnter={(e) => {
-          e.currentTarget.style.borderColor = '#6900ef';
-          e.currentTarget.style.background = 'linear-gradient(135deg, #fafbff 0%, white 100%)';
+          e.currentTarget.style.borderColor = "#6900ef";
+          e.currentTarget.style.background =
+            "linear-gradient(135deg, #fafbff 0%, white 100%)";
         }}
         onMouseLeave={(e) => {
-          e.currentTarget.style.borderColor = '#e5e7eb';
-          e.currentTarget.style.background = 'white';
+          e.currentTarget.style.borderColor = "#e5e7eb";
+          e.currentTarget.style.background = "white";
         }}
       >
-        <div style={{ display: 'flex', alignItems: 'flex-start', gap: '16px' }}>
-          <div style={{ 
-            width: '44px', 
-            height: '44px', 
-            background: '#f3e8ff',
-            borderRadius: '10px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            flexShrink: 0
-          }}>
+        <div style={{ display: "flex", alignItems: "flex-start", gap: "16px" }}>
+          <div
+            style={{
+              width: "44px",
+              height: "44px",
+              background: "#f3e8ff",
+              borderRadius: "10px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              flexShrink: 0,
+            }}
+          >
             <Table size={22} color="#6900ef" />
           </div>
           <div>
-            <h3 style={{ fontSize: '18px', fontWeight: '600', color: '#111827', margin: '0 0 8px 0' }}>Analytics</h3>
-            <p style={{ fontSize: '13px', color: '#6B7280', margin: 0, lineHeight: '1.5' }}>
+            <h3
+              style={{
+                fontSize: "18px",
+                fontWeight: "600",
+                color: "#111827",
+                margin: "0 0 8px 0",
+              }}
+            >
+              Analytics
+            </h3>
+            <p
+              style={{
+                fontSize: "13px",
+                color: "#6B7280",
+                margin: 0,
+                lineHeight: "1.5",
+              }}
+            >
               Track performance and insights
             </p>
           </div>
         </div>
-        <div style={{ 
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          padding: '10px',
-          background: '#6900ef',
-          borderRadius: '8px',
-          color: 'white',
-          fontSize: '14px',
-          fontWeight: '600'
-        }}>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            padding: "10px",
+            background: "#6900ef",
+            borderRadius: "8px",
+            color: "white",
+            fontSize: "14px",
+            fontWeight: "600",
+          }}
+        >
           Access Now
         </div>
       </div>
@@ -931,11 +1215,25 @@ function CardVariant8() {
 function CardVariant9() {
   return (
     <div>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
-        <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#111827', margin: 0 }}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          marginBottom: "16px",
+        }}
+      >
+        <h3
+          style={{
+            fontSize: "16px",
+            fontWeight: "600",
+            color: "#111827",
+            margin: 0,
+          }}
+        >
           Variant 9: Minimal Dark
         </h3>
-        <CopyButton 
+        <CopyButton
           variantId="card-minimal-dark"
           code={`<style>
 .card-dark {
@@ -1002,53 +1300,73 @@ function CardVariant9() {
       </div>
       <div
         style={{
-          background: '#1a1a2e',
-          border: '1px solid #2a2a3e',
-          borderRadius: '12px',
-          padding: '24px',
-          cursor: 'pointer',
-          transition: 'all 0.3s',
-          height: '220px',
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'space-between'
+          background: "#1a1a2e",
+          border: "1px solid #2a2a3e",
+          borderRadius: "12px",
+          padding: "24px",
+          cursor: "pointer",
+          transition: "all 0.3s",
+          height: "220px",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
         }}
         onMouseEnter={(e) => {
-          e.currentTarget.style.borderColor = '#6900ef';
-          e.currentTarget.style.boxShadow = '0 0 20px rgba(105, 0, 239, 0.3)';
+          e.currentTarget.style.borderColor = "#6900ef";
+          e.currentTarget.style.boxShadow = "0 0 20px rgba(105, 0, 239, 0.3)";
         }}
         onMouseLeave={(e) => {
-          e.currentTarget.style.borderColor = '#2a2a3e';
-          e.currentTarget.style.boxShadow = 'none';
+          e.currentTarget.style.borderColor = "#2a2a3e";
+          e.currentTarget.style.boxShadow = "none";
         }}
       >
         <div>
-          <div style={{ 
-            width: '40px', 
-            height: '40px', 
-            background: '#6900ef',
-            borderRadius: '8px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            marginBottom: '16px'
-          }}>
+          <div
+            style={{
+              width: "40px",
+              height: "40px",
+              background: "#6900ef",
+              borderRadius: "8px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              marginBottom: "16px",
+            }}
+          >
             <Table size={22} color="white" />
           </div>
-          <h3 style={{ fontSize: '18px', fontWeight: '600', color: 'white', margin: '0 0 8px 0' }}>Analytics</h3>
-          <p style={{ fontSize: '14px', color: '#9CA3AF', margin: 0, lineHeight: '1.5' }}>
+          <h3
+            style={{
+              fontSize: "18px",
+              fontWeight: "600",
+              color: "white",
+              margin: "0 0 8px 0",
+            }}
+          >
+            Analytics
+          </h3>
+          <p
+            style={{
+              fontSize: "14px",
+              color: "#9CA3AF",
+              margin: 0,
+              lineHeight: "1.5",
+            }}
+          >
             Track performance and insights
           </p>
         </div>
-        <div style={{ 
-          width: '32px',
-          height: '32px',
-          background: 'rgba(105, 0, 239, 0.2)',
-          borderRadius: '50%',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center'
-        }}>
+        <div
+          style={{
+            width: "32px",
+            height: "32px",
+            background: "rgba(105, 0, 239, 0.2)",
+            borderRadius: "50%",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
           <ArrowRight size={16} color="#6900ef" />
         </div>
       </div>
@@ -1060,11 +1378,25 @@ function CardVariant9() {
 function CardVariant10() {
   return (
     <div>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
-        <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#111827', margin: 0 }}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          marginBottom: "16px",
+        }}
+      >
+        <h3
+          style={{
+            fontSize: "16px",
+            fontWeight: "600",
+            color: "#111827",
+            margin: 0,
+          }}
+        >
           Variant 10: Badge Style
         </h3>
-        <CopyButton 
+        <CopyButton
           variantId="card-badge-style"
           code={`<style>
 .card-badge {
@@ -1127,45 +1459,68 @@ function CardVariant10() {
       </div>
       <div
         style={{
-          background: 'white',
-          border: '1px solid #e5e7eb',
-          borderRadius: '12px',
-          padding: '24px',
-          cursor: 'pointer',
-          transition: 'all 0.3s',
-          height: '220px',
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'space-between',
-          position: 'relative',
-          overflow: 'hidden'
+          background: "white",
+          border: "1px solid #e5e7eb",
+          borderRadius: "12px",
+          padding: "24px",
+          cursor: "pointer",
+          transition: "all 0.3s",
+          height: "220px",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
+          position: "relative",
+          overflow: "hidden",
         }}
         onMouseEnter={(e) => {
-          e.currentTarget.style.transform = 'translateY(-4px)';
-          e.currentTarget.style.boxShadow = '0 8px 16px rgba(0,0,0,0.1)';
+          e.currentTarget.style.transform = "translateY(-4px)";
+          e.currentTarget.style.boxShadow = "0 8px 16px rgba(0,0,0,0.1)";
         }}
         onMouseLeave={(e) => {
-          e.currentTarget.style.transform = 'translateY(0)';
-          e.currentTarget.style.boxShadow = 'none';
+          e.currentTarget.style.transform = "translateY(0)";
+          e.currentTarget.style.boxShadow = "none";
         }}
       >
-        <div style={{
-          position: 'absolute',
-          top: '12px',
-          right: '12px',
-          background: '#6900ef',
-          color: 'white',
-          padding: '4px 10px',
-          borderRadius: '12px',
-          fontSize: '11px',
-          fontWeight: '700'
-        }}>
+        <div
+          style={{
+            position: "absolute",
+            top: "12px",
+            right: "12px",
+            background: "#6900ef",
+            color: "white",
+            padding: "4px 10px",
+            borderRadius: "12px",
+            fontSize: "11px",
+            fontWeight: "700",
+          }}
+        >
           POPULAR
         </div>
         <div>
-          <Sparkles size={32} color="#6900ef" strokeWidth={2} style={{ marginBottom: '16px' }} />
-          <h3 style={{ fontSize: '20px', fontWeight: '700', color: '#111827', margin: '0 0 8px 0' }}>Analytics</h3>
-          <p style={{ fontSize: '14px', color: '#6B7280', margin: 0, lineHeight: '1.5' }}>
+          <Sparkles
+            size={32}
+            color="#6900ef"
+            strokeWidth={2}
+            style={{ marginBottom: "16px" }}
+          />
+          <h3
+            style={{
+              fontSize: "20px",
+              fontWeight: "700",
+              color: "#111827",
+              margin: "0 0 8px 0",
+            }}
+          >
+            Analytics
+          </h3>
+          <p
+            style={{
+              fontSize: "14px",
+              color: "#6B7280",
+              margin: 0,
+              lineHeight: "1.5",
+            }}
+          >
             Track performance and insights
           </p>
         </div>
@@ -1178,11 +1533,25 @@ function CardVariant10() {
 function CardVariant11() {
   return (
     <div>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
-        <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#111827', margin: 0 }}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          marginBottom: "16px",
+        }}
+      >
+        <h3
+          style={{
+            fontSize: "16px",
+            fontWeight: "600",
+            color: "#111827",
+            margin: 0,
+          }}
+        >
           Variant 11: Icon Background
         </h3>
-        <CopyButton 
+        <CopyButton
           variantId="card-icon-background"
           code={`<style>
 .card-icon-bg {
@@ -1252,48 +1621,69 @@ function CardVariant11() {
       </div>
       <div
         style={{
-          background: 'white',
-          border: 'none',
-          borderRadius: '16px',
-          padding: '24px',
-          cursor: 'pointer',
-          transition: 'all 0.3s',
-          height: '220px',
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'space-between',
-          boxShadow: '0 4px 12px rgba(0,0,0,0.06)',
-          position: 'relative',
-          overflow: 'hidden'
+          background: "white",
+          border: "none",
+          borderRadius: "16px",
+          padding: "24px",
+          cursor: "pointer",
+          transition: "all 0.3s",
+          height: "220px",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
+          boxShadow: "0 4px 12px rgba(0,0,0,0.06)",
+          position: "relative",
+          overflow: "hidden",
         }}
         onMouseEnter={(e) => {
-          e.currentTarget.style.boxShadow = '0 8px 24px rgba(105, 0, 239, 0.12)';
+          e.currentTarget.style.boxShadow =
+            "0 8px 24px rgba(105, 0, 239, 0.12)";
         }}
         onMouseLeave={(e) => {
-          e.currentTarget.style.boxShadow = '0 4px 12px rgba(0,0,0,0.06)';
+          e.currentTarget.style.boxShadow = "0 4px 12px rgba(0,0,0,0.06)";
         }}
       >
-        <div style={{
-          position: 'absolute',
-          bottom: '-20px',
-          right: '-20px',
-          opacity: 0.05
-        }}>
+        <div
+          style={{
+            position: "absolute",
+            bottom: "-20px",
+            right: "-20px",
+            opacity: 0.05,
+          }}
+        >
           <Table size={120} color="#6900ef" strokeWidth={1} />
         </div>
-        <div style={{ position: 'relative', zIndex: 1 }}>
-          <h3 style={{ fontSize: '22px', fontWeight: '700', color: '#111827', margin: '0 0 8px 0' }}>Analytics</h3>
-          <p style={{ fontSize: '14px', color: '#6B7280', margin: '0 0 16px 0', lineHeight: '1.5' }}>
+        <div style={{ position: "relative", zIndex: 1 }}>
+          <h3
+            style={{
+              fontSize: "22px",
+              fontWeight: "700",
+              color: "#111827",
+              margin: "0 0 8px 0",
+            }}
+          >
+            Analytics
+          </h3>
+          <p
+            style={{
+              fontSize: "14px",
+              color: "#6B7280",
+              margin: "0 0 16px 0",
+              lineHeight: "1.5",
+            }}
+          >
             Track performance and insights
           </p>
-          <div style={{
-            display: 'inline-flex',
-            alignItems: 'center',
-            gap: '6px',
-            color: '#6900ef',
-            fontSize: '14px',
-            fontWeight: '600'
-          }}>
+          <div
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "6px",
+              color: "#6900ef",
+              fontSize: "14px",
+              fontWeight: "600",
+            }}
+          >
             <span>Get started</span>
             <ExternalLink size={16} />
           </div>
@@ -1308,57 +1698,87 @@ function CardVariant12() {
   return (
     <div
       style={{
-        background: 'white',
-        border: '1px solid #e5e7eb',
-        borderRadius: '12px',
-        padding: '0',
-        cursor: 'pointer',
-        transition: 'all 0.3s',
-        height: '220px',
-        display: 'flex',
-        flexDirection: 'column',
-        overflow: 'hidden'
+        background: "white",
+        border: "1px solid #e5e7eb",
+        borderRadius: "12px",
+        padding: "0",
+        cursor: "pointer",
+        transition: "all 0.3s",
+        height: "220px",
+        display: "flex",
+        flexDirection: "column",
+        overflow: "hidden",
       }}
       onMouseEnter={(e) => {
-        e.currentTarget.style.borderColor = '#6900ef';
+        e.currentTarget.style.borderColor = "#6900ef";
       }}
       onMouseLeave={(e) => {
-        e.currentTarget.style.borderColor = '#e5e7eb';
+        e.currentTarget.style.borderColor = "#e5e7eb";
       }}
     >
-      <div style={{
-        background: 'linear-gradient(135deg, #6900ef 0%, #8b3dff 100%)',
-        padding: '20px 24px',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between'
-      }}>
-        <h3 style={{ fontSize: '20px', fontWeight: '700', color: 'white', margin: 0 }}>Analytics</h3>
-        <div style={{ 
-          width: '40px', 
-          height: '40px', 
-          background: 'rgba(255,255,255,0.2)',
-          borderRadius: '10px',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center'
-        }}>
+      <div
+        style={{
+          background: "linear-gradient(135deg, #6900ef 0%, #8b3dff 100%)",
+          padding: "20px 24px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+        }}
+      >
+        <h3
+          style={{
+            fontSize: "20px",
+            fontWeight: "700",
+            color: "white",
+            margin: 0,
+          }}
+        >
+          Analytics
+        </h3>
+        <div
+          style={{
+            width: "40px",
+            height: "40px",
+            background: "rgba(255,255,255,0.2)",
+            borderRadius: "10px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
           <Table size={22} color="white" />
         </div>
       </div>
-      <div style={{ padding: '24px', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
-        <p style={{ fontSize: '14px', color: '#6B7280', margin: 0, lineHeight: '1.5' }}>
+      <div
+        style={{
+          padding: "24px",
+          flex: 1,
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
+        }}
+      >
+        <p
+          style={{
+            fontSize: "14px",
+            color: "#6B7280",
+            margin: 0,
+            lineHeight: "1.5",
+          }}
+        >
           Track performance and insights
         </p>
-        <div style={{
-          padding: '8px 16px',
-          border: '2px solid #6900ef',
-          borderRadius: '8px',
-          color: '#6900ef',
-          fontSize: '14px',
-          fontWeight: '600',
-          textAlign: 'center'
-        }}>
+        <div
+          style={{
+            padding: "8px 16px",
+            border: "2px solid #6900ef",
+            borderRadius: "8px",
+            color: "#6900ef",
+            fontSize: "14px",
+            fontWeight: "600",
+            textAlign: "center",
+          }}
+        >
           Select Application
         </div>
       </div>
@@ -1371,52 +1791,72 @@ function CardVariant13() {
   return (
     <div
       style={{
-        background: 'linear-gradient(135deg, #f3e8ff 0%, #e9d5ff 100%)',
-        border: 'none',
-        borderRadius: '16px',
-        padding: '24px',
-        cursor: 'pointer',
-        transition: 'all 0.3s',
-        height: '220px',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'space-between',
-        position: 'relative',
-        overflow: 'hidden'
+        background: "linear-gradient(135deg, #f3e8ff 0%, #e9d5ff 100%)",
+        border: "none",
+        borderRadius: "16px",
+        padding: "24px",
+        cursor: "pointer",
+        transition: "all 0.3s",
+        height: "220px",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        position: "relative",
+        overflow: "hidden",
       }}
       onMouseEnter={(e) => {
-        e.currentTarget.style.transform = 'scale(1.02)';
-        e.currentTarget.style.boxShadow = '0 8px 24px rgba(105, 0, 239, 0.15)';
+        e.currentTarget.style.transform = "scale(1.02)";
+        e.currentTarget.style.boxShadow = "0 8px 24px rgba(105, 0, 239, 0.15)";
       }}
       onMouseLeave={(e) => {
-        e.currentTarget.style.transform = 'scale(1)';
-        e.currentTarget.style.boxShadow = 'none';
+        e.currentTarget.style.transform = "scale(1)";
+        e.currentTarget.style.boxShadow = "none";
       }}
     >
-      <div style={{
-        position: 'absolute',
-        top: '-50px',
-        right: '-50px',
-        width: '150px',
-        height: '150px',
-        background: 'rgba(255,255,255,0.5)',
-        borderRadius: '50%'
-      }}></div>
+      <div
+        style={{
+          position: "absolute",
+          top: "-50px",
+          right: "-50px",
+          width: "150px",
+          height: "150px",
+          background: "rgba(255,255,255,0.5)",
+          borderRadius: "50%",
+        }}
+      ></div>
       <div>
-        <div style={{ 
-          width: '48px', 
-          height: '48px', 
-          background: '#6900ef',
-          borderRadius: '12px',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          marginBottom: '16px'
-        }}>
+        <div
+          style={{
+            width: "48px",
+            height: "48px",
+            background: "#6900ef",
+            borderRadius: "12px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            marginBottom: "16px",
+          }}
+        >
           <Table size={24} color="white" />
         </div>
-        <h3 style={{ fontSize: '20px', fontWeight: '700', color: '#6900ef', margin: '0 0 8px 0' }}>Analytics</h3>
-        <p style={{ fontSize: '14px', color: '#7c3aed', margin: 0, lineHeight: '1.5' }}>
+        <h3
+          style={{
+            fontSize: "20px",
+            fontWeight: "700",
+            color: "#6900ef",
+            margin: "0 0 8px 0",
+          }}
+        >
+          Analytics
+        </h3>
+        <p
+          style={{
+            fontSize: "14px",
+            color: "#7c3aed",
+            margin: 0,
+            lineHeight: "1.5",
+          }}
+        >
           Track performance and insights
         </p>
       </div>
@@ -1429,52 +1869,72 @@ function CardVariant14() {
   return (
     <div
       style={{
-        background: 'linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%)',
-        border: 'none',
-        borderRadius: '16px',
-        padding: '24px',
-        cursor: 'pointer',
-        transition: 'all 0.3s',
-        height: '220px',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'space-between',
-        position: 'relative',
-        overflow: 'hidden'
+        background: "linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%)",
+        border: "none",
+        borderRadius: "16px",
+        padding: "24px",
+        cursor: "pointer",
+        transition: "all 0.3s",
+        height: "220px",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        position: "relative",
+        overflow: "hidden",
       }}
       onMouseEnter={(e) => {
-        e.currentTarget.style.transform = 'scale(1.02)';
-        e.currentTarget.style.boxShadow = '0 8px 24px rgba(59, 130, 246, 0.2)';
+        e.currentTarget.style.transform = "scale(1.02)";
+        e.currentTarget.style.boxShadow = "0 8px 24px rgba(59, 130, 246, 0.2)";
       }}
       onMouseLeave={(e) => {
-        e.currentTarget.style.transform = 'scale(1)';
-        e.currentTarget.style.boxShadow = 'none';
+        e.currentTarget.style.transform = "scale(1)";
+        e.currentTarget.style.boxShadow = "none";
       }}
     >
-      <div style={{
-        position: 'absolute',
-        top: '-50px',
-        right: '-50px',
-        width: '150px',
-        height: '150px',
-        background: 'rgba(255,255,255,0.6)',
-        borderRadius: '50%'
-      }}></div>
+      <div
+        style={{
+          position: "absolute",
+          top: "-50px",
+          right: "-50px",
+          width: "150px",
+          height: "150px",
+          background: "rgba(255,255,255,0.6)",
+          borderRadius: "50%",
+        }}
+      ></div>
       <div>
-        <div style={{ 
-          width: '48px', 
-          height: '48px', 
-          background: '#3b82f6',
-          borderRadius: '12px',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          marginBottom: '16px'
-        }}>
+        <div
+          style={{
+            width: "48px",
+            height: "48px",
+            background: "#3b82f6",
+            borderRadius: "12px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            marginBottom: "16px",
+          }}
+        >
           <Table size={24} color="white" />
         </div>
-        <h3 style={{ fontSize: '20px', fontWeight: '700', color: '#1e40af', margin: '0 0 8px 0' }}>Analytics</h3>
-        <p style={{ fontSize: '14px', color: '#2563eb', margin: 0, lineHeight: '1.5' }}>
+        <h3
+          style={{
+            fontSize: "20px",
+            fontWeight: "700",
+            color: "#1e40af",
+            margin: "0 0 8px 0",
+          }}
+        >
+          Analytics
+        </h3>
+        <p
+          style={{
+            fontSize: "14px",
+            color: "#2563eb",
+            margin: 0,
+            lineHeight: "1.5",
+          }}
+        >
           Track performance and insights
         </p>
       </div>
@@ -1487,52 +1947,72 @@ function CardVariant15() {
   return (
     <div
       style={{
-        background: 'linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%)',
-        border: 'none',
-        borderRadius: '16px',
-        padding: '24px',
-        cursor: 'pointer',
-        transition: 'all 0.3s',
-        height: '220px',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'space-between',
-        position: 'relative',
-        overflow: 'hidden'
+        background: "linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%)",
+        border: "none",
+        borderRadius: "16px",
+        padding: "24px",
+        cursor: "pointer",
+        transition: "all 0.3s",
+        height: "220px",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        position: "relative",
+        overflow: "hidden",
       }}
       onMouseEnter={(e) => {
-        e.currentTarget.style.transform = 'scale(1.02)';
-        e.currentTarget.style.boxShadow = '0 8px 24px rgba(236, 72, 153, 0.2)';
+        e.currentTarget.style.transform = "scale(1.02)";
+        e.currentTarget.style.boxShadow = "0 8px 24px rgba(236, 72, 153, 0.2)";
       }}
       onMouseLeave={(e) => {
-        e.currentTarget.style.transform = 'scale(1)';
-        e.currentTarget.style.boxShadow = 'none';
+        e.currentTarget.style.transform = "scale(1)";
+        e.currentTarget.style.boxShadow = "none";
       }}
     >
-      <div style={{
-        position: 'absolute',
-        top: '-50px',
-        right: '-50px',
-        width: '150px',
-        height: '150px',
-        background: 'rgba(255,255,255,0.5)',
-        borderRadius: '50%'
-      }}></div>
+      <div
+        style={{
+          position: "absolute",
+          top: "-50px",
+          right: "-50px",
+          width: "150px",
+          height: "150px",
+          background: "rgba(255,255,255,0.5)",
+          borderRadius: "50%",
+        }}
+      ></div>
       <div>
-        <div style={{ 
-          width: '48px', 
-          height: '48px', 
-          background: '#ec4899',
-          borderRadius: '12px',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          marginBottom: '16px'
-        }}>
+        <div
+          style={{
+            width: "48px",
+            height: "48px",
+            background: "#ec4899",
+            borderRadius: "12px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            marginBottom: "16px",
+          }}
+        >
           <Table size={24} color="white" />
         </div>
-        <h3 style={{ fontSize: '20px', fontWeight: '700', color: '#be185d', margin: '0 0 8px 0' }}>Analytics</h3>
-        <p style={{ fontSize: '14px', color: '#db2777', margin: 0, lineHeight: '1.5' }}>
+        <h3
+          style={{
+            fontSize: "20px",
+            fontWeight: "700",
+            color: "#be185d",
+            margin: "0 0 8px 0",
+          }}
+        >
+          Analytics
+        </h3>
+        <p
+          style={{
+            fontSize: "14px",
+            color: "#db2777",
+            margin: 0,
+            lineHeight: "1.5",
+          }}
+        >
           Track performance and insights
         </p>
       </div>
@@ -1545,52 +2025,72 @@ function CardVariant16() {
   return (
     <div
       style={{
-        background: 'linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%)',
-        border: 'none',
-        borderRadius: '16px',
-        padding: '24px',
-        cursor: 'pointer',
-        transition: 'all 0.3s',
-        height: '220px',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'space-between',
-        position: 'relative',
-        overflow: 'hidden'
+        background: "linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%)",
+        border: "none",
+        borderRadius: "16px",
+        padding: "24px",
+        cursor: "pointer",
+        transition: "all 0.3s",
+        height: "220px",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        position: "relative",
+        overflow: "hidden",
       }}
       onMouseEnter={(e) => {
-        e.currentTarget.style.transform = 'scale(1.02)';
-        e.currentTarget.style.boxShadow = '0 8px 24px rgba(16, 185, 129, 0.2)';
+        e.currentTarget.style.transform = "scale(1.02)";
+        e.currentTarget.style.boxShadow = "0 8px 24px rgba(16, 185, 129, 0.2)";
       }}
       onMouseLeave={(e) => {
-        e.currentTarget.style.transform = 'scale(1)';
-        e.currentTarget.style.boxShadow = 'none';
+        e.currentTarget.style.transform = "scale(1)";
+        e.currentTarget.style.boxShadow = "none";
       }}
     >
-      <div style={{
-        position: 'absolute',
-        top: '-50px',
-        right: '-50px',
-        width: '150px',
-        height: '150px',
-        background: 'rgba(255,255,255,0.5)',
-        borderRadius: '50%'
-      }}></div>
+      <div
+        style={{
+          position: "absolute",
+          top: "-50px",
+          right: "-50px",
+          width: "150px",
+          height: "150px",
+          background: "rgba(255,255,255,0.5)",
+          borderRadius: "50%",
+        }}
+      ></div>
       <div>
-        <div style={{ 
-          width: '48px', 
-          height: '48px', 
-          background: '#10b981',
-          borderRadius: '12px',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          marginBottom: '16px'
-        }}>
+        <div
+          style={{
+            width: "48px",
+            height: "48px",
+            background: "#10b981",
+            borderRadius: "12px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            marginBottom: "16px",
+          }}
+        >
           <Table size={24} color="white" />
         </div>
-        <h3 style={{ fontSize: '20px', fontWeight: '700', color: '#047857', margin: '0 0 8px 0' }}>Analytics</h3>
-        <p style={{ fontSize: '14px', color: '#059669', margin: 0, lineHeight: '1.5' }}>
+        <h3
+          style={{
+            fontSize: "20px",
+            fontWeight: "700",
+            color: "#047857",
+            margin: "0 0 8px 0",
+          }}
+        >
+          Analytics
+        </h3>
+        <p
+          style={{
+            fontSize: "14px",
+            color: "#059669",
+            margin: 0,
+            lineHeight: "1.5",
+          }}
+        >
           Track performance and insights
         </p>
       </div>
@@ -1603,52 +2103,72 @@ function CardVariant17() {
   return (
     <div
       style={{
-        background: 'linear-gradient(135deg, #fed7aa 0%, #fdba74 100%)',
-        border: 'none',
-        borderRadius: '16px',
-        padding: '24px',
-        cursor: 'pointer',
-        transition: 'all 0.3s',
-        height: '220px',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'space-between',
-        position: 'relative',
-        overflow: 'hidden'
+        background: "linear-gradient(135deg, #fed7aa 0%, #fdba74 100%)",
+        border: "none",
+        borderRadius: "16px",
+        padding: "24px",
+        cursor: "pointer",
+        transition: "all 0.3s",
+        height: "220px",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        position: "relative",
+        overflow: "hidden",
       }}
       onMouseEnter={(e) => {
-        e.currentTarget.style.transform = 'scale(1.02)';
-        e.currentTarget.style.boxShadow = '0 8px 24px rgba(249, 115, 22, 0.2)';
+        e.currentTarget.style.transform = "scale(1.02)";
+        e.currentTarget.style.boxShadow = "0 8px 24px rgba(249, 115, 22, 0.2)";
       }}
       onMouseLeave={(e) => {
-        e.currentTarget.style.transform = 'scale(1)';
-        e.currentTarget.style.boxShadow = 'none';
+        e.currentTarget.style.transform = "scale(1)";
+        e.currentTarget.style.boxShadow = "none";
       }}
     >
-      <div style={{
-        position: 'absolute',
-        top: '-50px',
-        right: '-50px',
-        width: '150px',
-        height: '150px',
-        background: 'rgba(255,255,255,0.4)',
-        borderRadius: '50%'
-      }}></div>
+      <div
+        style={{
+          position: "absolute",
+          top: "-50px",
+          right: "-50px",
+          width: "150px",
+          height: "150px",
+          background: "rgba(255,255,255,0.4)",
+          borderRadius: "50%",
+        }}
+      ></div>
       <div>
-        <div style={{ 
-          width: '48px', 
-          height: '48px', 
-          background: '#f97316',
-          borderRadius: '12px',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          marginBottom: '16px'
-        }}>
+        <div
+          style={{
+            width: "48px",
+            height: "48px",
+            background: "#f97316",
+            borderRadius: "12px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            marginBottom: "16px",
+          }}
+        >
           <Table size={24} color="white" />
         </div>
-        <h3 style={{ fontSize: '20px', fontWeight: '700', color: '#c2410c', margin: '0 0 8px 0' }}>Analytics</h3>
-        <p style={{ fontSize: '14px', color: '#ea580c', margin: 0, lineHeight: '1.5' }}>
+        <h3
+          style={{
+            fontSize: "20px",
+            fontWeight: "700",
+            color: "#c2410c",
+            margin: "0 0 8px 0",
+          }}
+        >
+          Analytics
+        </h3>
+        <p
+          style={{
+            fontSize: "14px",
+            color: "#ea580c",
+            margin: 0,
+            lineHeight: "1.5",
+          }}
+        >
           Track performance and insights
         </p>
       </div>
@@ -1658,141 +2178,153 @@ function CardVariant17() {
 
 export default function CardVariants() {
   return (
-    <div style={{ 
-      background: 'linear-gradient(135deg, #f8f9ff 0%, #ffffff 50%, #f5f7ff 100%)',
-      minHeight: '100vh',
-      padding: '40px 80px'
-    }}>
-      <div style={{ marginBottom: '48px' }}>
-        <h1 style={{ fontSize: '36px', fontWeight: '700', color: '#111827', margin: '0 0 12px 0' }}>
+    <div
+      style={{
+        background:
+          "linear-gradient(135deg, #f8f9ff 0%, #ffffff 50%, #f5f7ff 100%)",
+        minHeight: "100vh",
+        padding: "40px 80px",
+      }}
+    >
+      <div style={{ marginBottom: "48px" }}>
+        <h1
+          style={{
+            fontSize: "36px",
+            fontWeight: "700",
+            color: "#111827",
+            margin: "0 0 12px 0",
+          }}
+        >
           Card Design Variants
         </h1>
-        <p style={{ fontSize: '16px', color: '#6B7280', margin: 0 }}>
+        <p style={{ fontSize: "16px", color: "#6B7280", margin: 0 }}>
           Choose your preferred card style (1-12)
         </p>
       </div>
 
-      <div style={{ 
-        display: 'grid',
-        gridTemplateColumns: 'repeat(3, 1fr)',
-        gap: '32px'
-      }}>
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(3, 1fr)",
+          gap: "32px",
+        }}
+      >
         <div>
-          <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
+          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
             VARIANT 1 - Minimal Border
-          </div>
+          </div> */}
           <CardVariant1 />
         </div>
 
         <div>
-          <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
+          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
             VARIANT 2 - Soft Shadow
-          </div>
+          </div> */}
           <CardVariant2 />
         </div>
 
         <div>
-          <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
+          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
             VARIANT 3 - Left Border Accent
-          </div>
+          </div> */}
           <CardVariant3 />
         </div>
 
         <div>
-          <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
+          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
             VARIANT 4 - Gradient Background
-          </div>
+          </div> */}
           <CardVariant4 />
         </div>
 
         <div>
-          <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
+          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
             VARIANT 5 - Outlined Hover
-          </div>
+          </div> */}
           <CardVariant5 />
         </div>
 
         <div>
-          <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
+          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
             VARIANT 6 - Top Stripe
-          </div>
+          </div> */}
           <CardVariant6 />
         </div>
 
         <div>
-          <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
+          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
             VARIANT 7 - Glass Morphism
-          </div>
+          </div> */}
           <CardVariant7 />
         </div>
 
         <div>
-          <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
+          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
             VARIANT 8 - Compact Horizontal
-          </div>
+          </div> */}
           <CardVariant8 />
         </div>
 
         <div>
-          <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
+          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
             VARIANT 9 - Minimal Dark
-          </div>
+          </div> */}
           <CardVariant9 />
         </div>
 
         <div>
-          <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
+          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
             VARIANT 10 - Badge Style
-          </div>
+          </div> */}
           <CardVariant10 />
         </div>
 
         <div>
-          <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
+          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
             VARIANT 11 - Icon Background
-          </div>
+          </div> */}
           <CardVariant11 />
         </div>
 
         <div>
-          <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
+          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
             VARIANT 12 - Split Design
-          </div>
+          </div> */}
           <CardVariant12 />
         </div>
 
         <div>
-          <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
+          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
             VARIANT 13 - Light Purple Gradient
-          </div>
+          </div> */}
           <CardVariant13 />
         </div>
 
         <div>
-          <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
+          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
             VARIANT 14 - Soft Blue Gradient
-          </div>
+          </div> */}
           <CardVariant14 />
         </div>
 
         <div>
-          <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
+          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
             VARIANT 15 - Pastel Gradient
-          </div>
+          </div> */}
           <CardVariant15 />
         </div>
 
         <div>
-          <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
+          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
             VARIANT 16 - Mint Gradient
-          </div>
+          </div> */}
           <CardVariant16 />
         </div>
 
         <div>
-          <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
+          {/* <div style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '700', color: '#6900ef' }}>
             VARIANT 17 - Peach Gradient
-          </div>
+          </div> */}
           <CardVariant17 />
         </div>
       </div>
