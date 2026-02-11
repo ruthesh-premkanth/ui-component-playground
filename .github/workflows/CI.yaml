@@ -13,12 +13,17 @@ permissions:
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
-environment:
+    
+    # These must be indented 4 spaces (2 from 'jobs', 2 from 'build_and_deploy')
+    environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      
+      # ... (the rest of your steps follow)
 
       - name: Set up Node
         uses: actions/setup-node@v4
