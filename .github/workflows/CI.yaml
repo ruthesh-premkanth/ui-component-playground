@@ -35,7 +35,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Using 'build' because your vite.config.ts uses outDir: 'build'
+          # Using 'build' because your vite.config.ts uses outDir:'build'
           path: './build'
 
       - name: Deploy to GitHub Pages
