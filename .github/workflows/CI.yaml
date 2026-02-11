@@ -4,7 +4,6 @@ on:
   push:
     branches: ["main"]
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
@@ -13,17 +12,13 @@ permissions:
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
-    
-    # These must be indented 4 spaces (2 from 'jobs', 2 from 'build_and_deploy')
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
+    
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      
-      # ... (the rest of your steps follow)
 
       - name: Set up Node
         uses: actions/setup-node@v4
@@ -37,13 +32,10 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # This must match your build output folder (usually 'dist' for Vite)
+          # Using 'build' because your vite.config.ts uses outDir: 'build'
           path: './build'
 
       - name: Deploy to GitHub Pages
